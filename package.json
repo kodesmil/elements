@@ -5,6 +5,7 @@
   "author": "",
   "license": "",
   "keywords": [],
+  "private": false,
   "repository": {
     "type": "git",
     "url": ""
