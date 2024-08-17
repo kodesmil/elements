@@ -5,7 +5,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from '@/ui/breadcrumb'
+} from '@/sh/breadcrumb'
 import Link from 'next/link'
 import React from 'react'
 

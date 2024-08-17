@@ -1,4 +1,4 @@
-import { Input } from '@/ui/input'
+import { Input } from '@/sh/input'
 import { Search } from 'lucide-react'
 
 export function KsSearch() {

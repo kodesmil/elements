@@ -1,6 +1,6 @@
-import { Button } from '@/ui/button'
-import { Popover, PopoverContent, PopoverTrigger } from '@/ui/popover'
-import { Text } from '@/ui/text'
+import { Button } from '@/sh/button'
+import { Popover, PopoverContent, PopoverTrigger } from '@/sh/popover'
+import { Text } from '@/sh/text'
 import {
   Check,
   CheckSquare,

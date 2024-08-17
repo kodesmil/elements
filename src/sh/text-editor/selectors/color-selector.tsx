@@ -1,6 +1,6 @@
-import { Button } from '@/ui/button'
-import { Popover, PopoverContent, PopoverTrigger } from '@/ui/popover'
-import { Head3, Text } from '@/ui/text'
+import { Button } from '@/sh/button'
+import { Popover, PopoverContent, PopoverTrigger } from '@/sh/popover'
+import { Head3, Text } from '@/sh/text'
 import { Check, ChevronDown } from 'lucide-react'
 import { EditorBubbleItem, useEditor } from 'novel'
 

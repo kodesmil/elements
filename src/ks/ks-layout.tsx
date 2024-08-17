@@ -1,7 +1,7 @@
 'use client'
 
-import { Toaster } from '@/ui/sonner'
-import { ThemeProvider } from '@/ui/theme-provider'
+import { Toaster } from '@/sh/sonner'
+import { ThemeProvider } from '@/sh/theme-provider'
 import type { ReactNode } from 'react'
 
 export function KsLayout({ children }: { children: ReactNode }) {

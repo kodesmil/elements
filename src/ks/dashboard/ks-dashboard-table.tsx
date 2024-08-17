@@ -1,4 +1,4 @@
-import { Badge } from '@/ui/badge'
+import { Badge } from '@/sh/badge'
 import {
   Table,
   TableBody,
@@ -6,7 +6,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/ui/table'
+} from '@/sh/table'
 
 export function KsDashboardTable() {
   return (

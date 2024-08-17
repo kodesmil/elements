@@ -1,4 +1,4 @@
-import { Head2, Text } from '@/ui/text'
+import { Head2, Text } from '@/sh/text'
 
 export type KsFormHeaderProps = {
   title: string

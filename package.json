@@ -31,6 +31,14 @@
     ".": {
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
+    },
+    "./sh": {
+      "require": "./dist/sh/index.js",
+      "import": "./dist/sh/index.mjs"
+    },
+    "./ks": {
+      "require": "./dist/ks/index.js",
+      "import": "./dist/ks/index.mjs"
     }
   },
   "files": ["dist"],

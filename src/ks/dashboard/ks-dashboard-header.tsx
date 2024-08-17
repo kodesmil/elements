@@ -1,5 +1,5 @@
-import { Button } from '@/ui/button'
-import { Head3 } from '@/ui/text'
+import { Button } from '@/sh/button'
+import { Head3 } from '@/sh/text'
 import type { ReactNode } from 'react'
 
 export function KsDashboardHeader(props: {

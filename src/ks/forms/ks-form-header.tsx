@@ -1,4 +1,4 @@
-import { Head1, Text } from '@/ui/text'
+import { Head1, Text } from '@/sh/text'
 
 type TFormHeaderProps = {
   title: string

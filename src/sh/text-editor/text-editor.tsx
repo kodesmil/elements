@@ -8,11 +8,11 @@ import {
 import { ImageResizer, handleCommandNavigation } from 'novel/extensions'
 import { useState } from 'react'
 
-import { defaultExtensions } from '@/ui/text-editor/extensions'
-import { ColorSelector } from '@/ui/text-editor/selectors/color-selector'
-import { LinkSelector } from '@/ui/text-editor/selectors/link-selector'
-import { NodeSelector } from '@/ui/text-editor/selectors/node-selector'
-import { TextButtons } from '@/ui/text-editor/selectors/text-buttons'
+import { defaultExtensions } from '@/sh/text-editor/extensions'
+import { ColorSelector } from '@/sh/text-editor/selectors/color-selector'
+import { LinkSelector } from '@/sh/text-editor/selectors/link-selector'
+import { NodeSelector } from '@/sh/text-editor/selectors/node-selector'
+import { TextButtons } from '@/sh/text-editor/selectors/text-buttons'
 import { handleImageDrop, handleImagePaste } from 'novel/plugins'
 import { uploadFn } from './image-upload'
 

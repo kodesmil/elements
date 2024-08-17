@@ -1,5 +1,5 @@
 import { KsImage } from '@/ks/ks-image'
-import { Button } from '@/ui/button'
+import { Button } from '@/sh/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,7 +7,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/ui/dropdown-menu'
+} from '@/sh/dropdown-menu'
 
 export function KsDropdownMenu() {
   return (

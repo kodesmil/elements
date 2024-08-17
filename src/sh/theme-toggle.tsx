@@ -1,13 +1,13 @@
 'use client'
 import { useTheme } from 'next-themes'
 
-import { Button } from '@/ui/button'
+import { Button } from '@/sh/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/ui/dropdown-menu'
+} from '@/sh/dropdown-menu'
 import { MoonIcon, SunIcon } from 'lucide-react'
 
 export function ThemeToggle() {
