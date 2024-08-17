@@ -5,8 +5,8 @@ import path from 'node:path'
 import { type Options, defineConfig } from 'tsup'
 
 const common: Options = {
-  entry: ['src/index.ts'],
-  treeshake: false,
+  entry: ['src/index.ts', 'src/ui/index.ts', 'src/ks/index.ts'],
+  treeshake: true,
   sourcemap: 'inline',
   minify: true,
   clean: true,
