@@ -1,10 +1,8 @@
-import renderer from 'react-test-renderer'
+import { render } from '@testing-library/react'
 import { expect, it } from 'vitest'
-import { KsExample } from '../src'
+import { KsExample } from '../src/molecules/ks-example'
 
 it('renders correctly', () => {
-  const tree = renderer
-    .create(<KsExample text="Clicked this many times" />)
-    .toJSON()
-  expect(tree).toMatchSnapshot()
+  const { container } = render(<KsExample text="Clicked this many times" />)
+  expect(container).toMatchSnapshot()
 })
