@@ -2,13 +2,15 @@
   "name": "@covision/elements",
   "description": "",
   "version": "0.0.2",
-  "author": "",
+  "author": "Covision Studio",
   "license": "",
   "keywords": [],
-  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/kodesmil/elements.git"
   },
   "scripts": {
     "dev": "concurrently \"pnpm build --watch\" \"pnpm storybook\" \"pnpm test\" ",
