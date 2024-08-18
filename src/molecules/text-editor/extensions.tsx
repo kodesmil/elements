@@ -1,3 +1,5 @@
+import type { Extension, Mark, Node } from '@tiptap/core'
+import { cx } from 'class-variance-authority'
 import {
   AIHighlight,
   HorizontalRule,
@@ -9,10 +11,7 @@ import {
   TiptapLink,
   UpdatedImage,
 } from 'novel/extensions'
-
 import { UploadImagesPlugin } from 'novel/plugins'
-
-import { cx } from 'class-variance-authority'
 
 const aiHighlight = AIHighlight
 const placeholder = Placeholder
@@ -105,7 +104,7 @@ const starterKit = StarterKit.configure({
   gapcursor: false,
 })
 
-export const defaultExtensions = [
+export const defaultExtensions: (Node | Extension | Mark)[] = [
   starterKit,
   placeholder,
   tiptapLink,

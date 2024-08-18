@@ -1,9 +1,10 @@
 import { KsDropdownMenu } from '@/molecules/dashboard/ks-dropdown-menu'
 import { KsBreadcrumb } from '@/molecules/ks-breadcrumb'
 import { KsSheet } from '@/molecules/ks-sheet'
+import type { ReactNode } from 'react'
 
 export function KsHeader(props: {
-  action: React.ReactNode
+  action: ReactNode
   breadcrumbs: {
     href: string
     label: string

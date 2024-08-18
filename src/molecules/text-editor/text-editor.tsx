@@ -8,13 +8,13 @@ import {
 import { ImageResizer, handleCommandNavigation } from 'novel/extensions'
 import { useState } from 'react'
 
-import { defaultExtensions } from '@/atoms/text-editor/extensions'
-import { ColorSelector } from '@/atoms/text-editor/selectors/color-selector'
-import { LinkSelector } from '@/atoms/text-editor/selectors/link-selector'
-import { NodeSelector } from '@/atoms/text-editor/selectors/node-selector'
-import { TextButtons } from '@/atoms/text-editor/selectors/text-buttons'
+import { uploadFn } from '@/molecules'
+import { defaultExtensions } from '@/molecules/text-editor/extensions'
+import { ColorSelector } from '@/molecules/text-editor/selectors/color-selector'
+import { LinkSelector } from '@/molecules/text-editor/selectors/link-selector'
+import { NodeSelector } from '@/molecules/text-editor/selectors/node-selector'
+import { TextButtons } from '@/molecules/text-editor/selectors/text-buttons'
 import { handleImageDrop, handleImagePaste } from 'novel/plugins'
-import { uploadFn } from './image-upload'
 
 const extensions = [...defaultExtensions]
 

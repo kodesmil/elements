@@ -11,9 +11,10 @@ const common: Options = {
   minify: true,
   clean: true,
   dts: true,
-  splitting: false,
+  splitting: true,
   format: ['cjs', 'esm'],
-  external: ['react', 'react-hook-form'],
+  external: ['react'],
+  platform: 'node',
   injectStyle: false,
 }
 
