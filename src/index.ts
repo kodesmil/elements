@@ -1,1 +1,1 @@
-export { TooltipProvider } from './atoms/shacdn/tooltip'
+import './globals.css'

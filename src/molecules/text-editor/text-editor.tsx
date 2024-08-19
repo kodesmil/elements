@@ -1,4 +1,3 @@
-'use client'
 import {
   EditorBubble,
   EditorContent,
@@ -22,7 +21,8 @@ interface EditorProp {
   defaultValue?: JSONContent
   onChange: (value: JSONContent) => void
 }
-const Editor = ({ defaultValue, onChange }: EditorProp) => {
+
+export const KsTextEditor = ({ defaultValue, onChange }: EditorProp) => {
   const [openNode, setOpenNode] = useState(false)
   const [openColor, setOpenColor] = useState(false)
   const [openLink, setOpenLink] = useState(false)
@@ -68,5 +68,3 @@ const Editor = ({ defaultValue, onChange }: EditorProp) => {
     </div>
   )
 }
-
-export default Editor
