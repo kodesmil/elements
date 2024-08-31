@@ -1,5 +1,5 @@
 import { Button } from '@/atoms'
-import { Head3 } from '@/atoms/shacdn/text'
+import { Head3 } from '@/atoms/shacdn/ui/text'
 import type { ReactNode } from 'react'
 
 export function KsDashboardHeader(props: {

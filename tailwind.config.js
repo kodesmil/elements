@@ -20,7 +20,7 @@ module.exports = {
         '5xl': '3rem',
       },
       fontFamily: {
-        sans: ['"Inter var", sans-serif'],
+        sans: ['var(--font-sans)', ...fontFamily.sans],
       },
       colors: {
         background: 'hsl(var(--background) / <alpha-value>)',

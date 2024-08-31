@@ -11,7 +11,7 @@
     "prefix": ""
   },
   "aliases": {
-    "components": "@/atoms/shacdn",
+    "components": "@/atoms/shacdn/",
     "utils": "@/lib/utils"
   }
 }

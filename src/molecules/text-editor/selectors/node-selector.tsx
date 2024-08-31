@@ -1,6 +1,10 @@
-import { Button } from '@/atoms/shacdn/button'
-import { Popover, PopoverContent, PopoverTrigger } from '@/atoms/shacdn/popover'
-import { Text } from '@/atoms/shacdn/text'
+import { Button } from '@/atoms/shacdn/ui/button'
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/atoms/shacdn/ui/popover'
+import { Text } from '@/atoms/shacdn/ui/text'
 import {
   Check,
   CheckSquare,

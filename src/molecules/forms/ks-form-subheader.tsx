@@ -1,4 +1,4 @@
-import { Head2, Text } from '@/atoms/shacdn/text'
+import { Head2, Text } from '@/atoms/shacdn/ui/text'
 
 export type KsFormHeaderProps = {
   title: string

@@ -1,5 +1,5 @@
-import { Button } from '@/atoms/shacdn/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/atoms/shacdn/sheet'
+import { Button } from '@/atoms/shacdn/ui/button'
+import { Sheet, SheetContent, SheetTrigger } from '@/atoms/shacdn/ui/sheet'
 import {
   Home,
   LineChart,

@@ -1,4 +1,4 @@
-import { Button } from '@/atoms/shacdn/button'
+import { Button } from '@/atoms/shacdn/ui/button'
 import {
   BoldIcon,
   CodeIcon,

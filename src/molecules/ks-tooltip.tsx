@@ -1,4 +1,8 @@
-import { Tooltip, TooltipContent, TooltipTrigger } from '@/atoms/shacdn/tooltip'
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@/atoms/shacdn/ui/tooltip'
 import type { ReactNode } from 'react'
 
 export const KsTooltip = (props: { children: ReactNode; tooltip: string }) => (

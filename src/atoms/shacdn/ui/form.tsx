@@ -9,7 +9,7 @@ import {
   useFormContext,
 } from 'react-hook-form'
 
-import { Label } from '@/atoms/shacdn/label'
+import { Label } from '@/atoms/shacdn/ui/label'
 import { cn } from '@/lib/utils'
 import React from 'react'
 

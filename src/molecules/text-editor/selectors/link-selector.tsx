@@ -1,6 +1,10 @@
-import { Button } from '@/atoms/shacdn/button'
-import { Input } from '@/atoms/shacdn/input'
-import { Popover, PopoverContent, PopoverTrigger } from '@/atoms/shacdn/popover'
+import { Button } from '@/atoms/shacdn/ui/button'
+import { Input } from '@/atoms/shacdn/ui/input'
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from '@/atoms/shacdn/ui/popover'
 import { Check, Trash } from 'lucide-react'
 import { useEditor } from 'novel'
 import { useEffect, useRef } from 'react'

@@ -1,4 +1,4 @@
-import { Button } from '@/atoms/shacdn/button'
+import { Button } from '@/atoms/shacdn/ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -6,7 +6,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/atoms/shacdn/dropdown-menu'
+} from '@/atoms/shacdn/ui/dropdown-menu'
 import { KsImage } from '@/molecules/ks-image'
 
 export function KsDropdownMenu() {

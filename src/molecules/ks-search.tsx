@@ -1,4 +1,4 @@
-import { Input } from '@/atoms/shacdn/input'
+import { Input } from '@/atoms/shacdn/ui/input'
 import { Search } from 'lucide-react'
 
 export function KsSearch() {

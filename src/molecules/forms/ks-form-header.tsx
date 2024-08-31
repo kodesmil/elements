@@ -1,4 +1,4 @@
-import { Head1, Text } from '@/atoms/shacdn/text'
+import { Head1, Text } from '@/atoms/shacdn/ui/text'
 
 type TFormHeaderProps = {
   title: string
