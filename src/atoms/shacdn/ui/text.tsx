@@ -86,7 +86,10 @@ export function Text(props: ComponentPropsWithoutRef<'p'>) {
   return (
     <p
       {...props}
-      className={cn('leading-7 [&:not(:first-child)]:mt-6', props.className)}
+      className={cn(
+        'text-lg leading-7 [&:not(:first-child)]:mt-6',
+        props.className
+      )}
     />
   )
 }
@@ -101,9 +104,7 @@ export function Lead(props: ComponentPropsWithoutRef<'p'>) {
 }
 
 export function Large(props: ComponentPropsWithoutRef<'p'>) {
-  return (
-    <p {...props} className={cn('font-semibold text-lg', props.className)} />
-  )
+  return <p {...props} className={cn('font-medium text-xl', props.className)} />
 }
 
 export function Small(props: ComponentPropsWithoutRef<'p'>) {

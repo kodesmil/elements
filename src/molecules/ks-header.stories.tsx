@@ -12,15 +12,5 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   args: {
     action: <div>Action</div>,
-    breadcrumbs: [
-      {
-        href: '/',
-        label: 'Home',
-      },
-      {
-        href: '/about',
-        label: 'About',
-      },
-    ],
   },
 }

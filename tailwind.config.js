@@ -10,15 +10,6 @@ module.exports = {
   },
   theme: {
     extend: {
-      fontSize: {
-        sm: '0.9rem',
-        base: '1.2rem',
-        xl: '1.4rem',
-        '2xl': '1.6rem',
-        '3xl': '1.8rem',
-        '4xl': '2.2rem',
-        '5xl': '3rem',
-      },
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
       },
