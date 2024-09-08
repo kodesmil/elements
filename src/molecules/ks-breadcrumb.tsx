@@ -16,7 +16,7 @@ export function KsBreadcrumb(props: {
   }[]
 }) {
   return (
-    <Breadcrumb className="hidden md:flex">
+    <Breadcrumb>
       <BreadcrumbList>
         {props.breadcrumbs.map((link, index) => (
           <React.Fragment key={index}>
