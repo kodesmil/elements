@@ -6,7 +6,7 @@ export function KsCardHeaderLayout(props: {
 }) {
   return (
     <div className={'flex flex-row justify-between'}>
-      <div>{props.children}</div>
+      <div className={'flex flex-col gap-3'}>{props.children}</div>
       <div className={'flex flex-row'}>{props.actions}</div>
     </div>
   )
