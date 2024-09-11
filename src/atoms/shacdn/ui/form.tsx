@@ -143,9 +143,13 @@ const FormMessage = React.forwardRef<
   }
 
   return (
-    <div ref={ref} id={formMessageId}>
+    <p
+      className={cn('text-[0.8rem] text-muted-foreground', className)}
+      ref={ref}
+      id={formMessageId}
+    >
       {body}
-    </div>
+    </p>
   )
 })
 FormMessage.displayName = 'FormMessage'
