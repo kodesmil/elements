@@ -25,7 +25,10 @@
     "enabled": true,
     "rules": {
       "all": true,
-      "correctness": { "noNodejsModules": "off" },
+      "correctness": {
+        "noNodejsModules": "off",
+        "useImportExtensions": "off"
+      },
       "nursery": {
         "useSortedClasses": {
           "level": "error",
@@ -37,7 +40,8 @@
         }
       },
       "suspicious": {
-        "noArrayIndexKey": "off"
+        "noArrayIndexKey": "off",
+        "noReactSpecificProps": "off"
       },
       "performance": { "noBarrelFile": "off", "noReExportAll": "off" },
       "style": {

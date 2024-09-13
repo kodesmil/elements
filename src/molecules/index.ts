@@ -9,6 +9,9 @@ export * from './forms/ks-form-section'
 export * from './forms/ks-form-subheader'
 export * from './forms/ks-form-subsection'
 
+export * from './forms/fields/ks-name-field'
+export * from './forms/fields/ks-picture-field'
+
 export * from './pages/ks-page-header'
 export * from './pages/ks-page-header-actions'
 export * from './pages/ks-page-layout'
