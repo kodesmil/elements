@@ -1,4 +1,3 @@
-import { StorageImage, StorageManager } from '@aws-amplify/ui-react-storage'
 import {
   Button,
   FormDescription,
@@ -6,7 +5,8 @@ import {
   FormMessage,
   LoadingSpinner,
   Small,
-} from '@covision/elements/atoms'
+} from '@/atoms'
+import { StorageImage, StorageManager } from '@aws-amplify/ui-react-storage'
 import { remove } from 'aws-amplify/storage'
 import { clsx } from 'clsx'
 import { useFormContext } from 'react-hook-form'

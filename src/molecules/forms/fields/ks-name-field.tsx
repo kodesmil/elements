@@ -7,8 +7,8 @@ import {
   FormLabel,
   FormMessage,
   Input,
-} from '@covision/elements/atoms'
-import { generateSillyname } from '@covision/elements/lib'
+} from '@/atoms'
+import { generateSillyname } from '@/lib'
 import { useFormContext } from 'react-hook-form'
 
 export const KsNameField = (props: {
