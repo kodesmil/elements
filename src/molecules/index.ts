@@ -27,6 +27,7 @@ export * from './text-editor/selectors/text-buttons'
 
 export * from './ks-breadcrumb'
 export * from './ks-card-header-layout'
+export * from './ks-copy-button'
 export * from './ks-header'
 export * from './ks-icon'
 export * from './ks-image'
