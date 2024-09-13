@@ -18,14 +18,14 @@ export const KsCopyButton: FC<KsCopyButtonProps> = ({
     try {
       await navigator.clipboard.writeText(textToCopy)
       setIsCopied(true)
-      setTimeout(() => setIsCopied(false), 10000)
+      setTimeout(() => setIsCopied(false), 3000)
     } catch (error) {
       console.error('Failed to copy text:', error)
     }
   }
 
   return (
-    <Button onClick={handleCopy}>
+    <Button variant={'secondary'} onClick={handleCopy}>
       {isCopied ? copiedButtonName : copyButtonName}
     </Button>
   )
