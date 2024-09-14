@@ -15,21 +15,18 @@ export function KsTextEditorField(props: {
   formDescription: string
 }) {
   const form = useFormContext()
-
+  const { formDescription, formLabel, formField } = props
   return (
     <FormField
       control={form.control}
-      name={props.formField}
+      name={formField}
       render={({ field }) => (
         <FormItem>
-          <FormLabel>{props.formLabel}</FormLabel>
+          <FormLabel>{formLabel}</FormLabel>
           <FormControl>
-            <KsTextEditor
-              {...field}
-              defaultValue={form.getValues().blogPostContent}
-            />
+            <KsTextEditor {...field} defaultValue={field.value} />
           </FormControl>
-          <FormDescription>{props.formDescription}</FormDescription>
+          <FormDescription>{formDescription}</FormDescription>
           <FormMessage />
         </FormItem>
       )}
