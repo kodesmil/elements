@@ -15,7 +15,6 @@ export const KsPictureField = (props: {
   formLabel: string
   formField: string
   formDescription: string
-  formMessage: string
   pictureStoragePath?: string
 }) => {
   const pictureStoragePath =
