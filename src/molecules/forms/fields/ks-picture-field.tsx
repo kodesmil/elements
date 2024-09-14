@@ -11,19 +11,24 @@ import { remove } from 'aws-amplify/storage'
 import { clsx } from 'clsx'
 import { useFormContext } from 'react-hook-form'
 
-export const KsPictureField = (props: {
+export type KsPictureFieldProps = {
   formLabel: string
   formField: string
   formDescription: string
   pictureStoragePath?: string
-}) => {
-  const pictureStoragePath =
-    props.pictureStoragePath ?? 'media/blog-posts-pictures'
+}
+
+export const KsPictureField = ({
+  formLabel,
+  formField,
+  formDescription,
+  pictureStoragePath = 'media/blog-posts-pictures',
+}: KsPictureFieldProps) => {
   const form = useFormContext()
   const defaultFile = form.formState.defaultValues?.picture
   return (
     <div>
-      <FormLabel>Name</FormLabel>
+      <FormLabel>{formLabel}</FormLabel>
       <StorageManager
         acceptedFileTypes={['image/*']}
         path={({ identityId }) => `${pictureStoragePath}/${identityId}/`}
@@ -53,7 +58,7 @@ export const KsPictureField = (props: {
             })
         }}
         onFileRemove={async (key) => {
-          form.setValue('picture', '')
+          form.setValue(formField, '')
           try {
             await remove({
               path: ({ identityId }) =>
@@ -64,28 +69,22 @@ export const KsPictureField = (props: {
         showThumbnails={true}
         onUploadSuccess={(key) => {
           if (key?.key) {
-            form.setValue('picture', key.key)
+            form.setValue(formField, key.key)
           }
         }}
         components={{
           Container({ children }) {
             return <div>{children}</div>
           },
-          FileListHeader({
-            allUploadsSuccessful,
-            displayText,
-            fileCount,
-            remainingFilesCount,
-            selectedFilesCount,
-          }) {
+          FileListHeader() {
             return <div />
           },
           DropZone({ children, displayText, inDropZone, ...rest }) {
             return (
               <div
                 className={clsx(
-                  'flex flex-col items-center gap-4 rounded border border-dotted p-8 align-middle',
-                  inDropZone ?? 'bg-gray-100'
+                  'flex flex-col items-center gap-4 rounded border border-2 border-dotted p-8 align-middle',
+                  inDropZone ?? 'bg-gray-200'
                 )}
                 {...rest}
               >
@@ -147,7 +146,7 @@ export const KsPictureField = (props: {
           },
         }}
       />
-      <FormDescription>{props.formDescription}</FormDescription>
+      <FormDescription>{formDescription}</FormDescription>
       <FormMessage />
     </div>
   )
