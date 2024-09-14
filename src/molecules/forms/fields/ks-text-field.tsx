@@ -14,7 +14,7 @@ export const KsTextField = (props: {
   formLabel: string
   formField: string
   formDescription: string
-  action: ReactNode
+  action?: ReactNode
 }) => {
   const form = useFormContext()
   return (
