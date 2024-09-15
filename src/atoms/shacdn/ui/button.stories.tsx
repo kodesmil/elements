@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Button } from '@/atoms'
+import { Button } from '@covision/elements/atoms'
 
 const meta = {
   component: Button,

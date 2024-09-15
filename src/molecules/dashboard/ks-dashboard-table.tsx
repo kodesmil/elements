@@ -1,4 +1,4 @@
-import { Badge } from '@/atoms/shacdn/ui/badge'
+import { Badge } from '@covision/elements/atoms/shacdn/ui/badge'
 import {
   Table,
   TableBody,
@@ -6,7 +6,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/atoms/shacdn/ui/table'
+} from '@covision/elements/atoms/shacdn/ui/table'
 
 export function KsDashboardTable() {
   return (

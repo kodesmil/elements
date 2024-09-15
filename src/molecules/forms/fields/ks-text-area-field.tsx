@@ -6,7 +6,7 @@ import {
   FormLabel,
   FormMessage,
   Textarea,
-} from '@/atoms'
+} from '@covision/elements/atoms'
 import { useFormContext } from 'react-hook-form'
 
 export const KsTextAreaField = (props: {

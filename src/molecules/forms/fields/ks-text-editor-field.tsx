@@ -5,8 +5,8 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/atoms'
-import { KsTextEditor } from '@/molecules'
+} from '@covision/elements/atoms'
+import { KsTextEditor } from '@covision/elements/molecules'
 import { useFormContext } from 'react-hook-form'
 
 export function KsTextEditorField(props: {
@@ -20,16 +20,18 @@ export function KsTextEditorField(props: {
     <FormField
       control={form.control}
       name={formField}
-      render={({ field }) => (
-        <FormItem>
-          <FormLabel>{formLabel}</FormLabel>
-          <FormControl>
-            <KsTextEditor {...field} defaultValue={field.value} />
-          </FormControl>
-          <FormDescription>{formDescription}</FormDescription>
-          <FormMessage />
-        </FormItem>
-      )}
+      render={({ field }) => {
+        return (
+          <FormItem>
+            <FormLabel>{formLabel}</FormLabel>
+            <FormControl>
+              <KsTextEditor {...field} defaultValue={field.value} />
+            </FormControl>
+            <FormDescription>{formDescription}</FormDescription>
+            <FormMessage />
+          </FormItem>
+        )
+      }}
     />
   )
 }

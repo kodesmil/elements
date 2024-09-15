@@ -8,7 +8,7 @@
     "strict": true,
     "noEmit": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@covision/elements/*": ["./src/*"]
     }
   },
   "include": [

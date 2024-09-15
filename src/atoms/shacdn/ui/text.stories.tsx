@@ -1,6 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Head1, Head2, Head3, Head4, Large, Small, Text, View } from '@/atoms'
+import {
+  Head1,
+  Head2,
+  Head3,
+  Head4,
+  Large,
+  Small,
+  Text,
+  View,
+} from '@covision/elements/atoms'
 
 const meta = {
   component: View,

@@ -7,12 +7,12 @@ import {
 import { ImageResizer, handleCommandNavigation } from 'novel/extensions'
 import { useState } from 'react'
 
-import { uploadFn } from '@/molecules'
-import { defaultExtensions } from '@/molecules/text-editor/extensions'
-import { ColorSelector } from '@/molecules/text-editor/selectors/color-selector'
-import { LinkSelector } from '@/molecules/text-editor/selectors/link-selector'
-import { NodeSelector } from '@/molecules/text-editor/selectors/node-selector'
-import { TextButtons } from '@/molecules/text-editor/selectors/text-buttons'
+import { uploadFn } from '@covision/elements/molecules'
+import { defaultExtensions } from '@covision/elements/molecules/text-editor/extensions'
+import { ColorSelector } from '@covision/elements/molecules/text-editor/selectors/color-selector'
+import { LinkSelector } from '@covision/elements/molecules/text-editor/selectors/link-selector'
+import { NodeSelector } from '@covision/elements/molecules/text-editor/selectors/node-selector'
+import { TextButtons } from '@covision/elements/molecules/text-editor/selectors/text-buttons'
 import { handleImageDrop, handleImagePaste } from 'novel/plugins'
 
 const extensions = [...defaultExtensions]

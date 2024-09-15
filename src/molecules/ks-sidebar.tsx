@@ -1,6 +1,6 @@
-import type { KsIconNameType } from '@/molecules/ks-icon'
-import { KsLinkIcon } from '@/molecules/ks-link-icon'
-import { KsTooltip } from '@/molecules/ks-tooltip'
+import type { KsIconNameType } from '@covision/elements/molecules/ks-icon'
+import { KsLinkIcon } from '@covision/elements/molecules/ks-link-icon'
+import { KsTooltip } from '@covision/elements/molecules/ks-tooltip'
 
 export type TSidebarItem = {
   name: string

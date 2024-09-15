@@ -1,4 +1,4 @@
-import { Input } from '@/atoms/shacdn/ui/input'
+import { Input } from '@covision/elements/atoms/shacdn/ui/input'
 import { Search } from 'lucide-react'
 
 export function KsSearch() {

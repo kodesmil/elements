@@ -5,12 +5,14 @@ import {
 } from '@radix-ui/react-icons'
 import * as React from 'react'
 
-import { type ButtonProps, buttonVariants } from '@/atoms/shacdn/ui/button'
-import { cn } from '@/lib/utils'
+import {
+  type ButtonProps,
+  buttonVariants,
+} from '@covision/elements/atoms/shacdn/ui/button'
+import { cn } from '@covision/elements/lib/utils'
 
 const Pagination = ({ className, ...props }: React.ComponentProps<'nav'>) => (
   <nav
-    role="navigation"
     aria-label="pagination"
     className={cn('mx-auto flex w-full justify-center', className)}
     {...props}

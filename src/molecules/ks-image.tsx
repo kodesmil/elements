@@ -1,4 +1,6 @@
-import KsIcon, { type KsIconNameType } from '@/molecules/ks-icon'
+import KsIcon, {
+  type KsIconNameType,
+} from '@covision/elements/molecules/ks-icon'
 import Image, { type ImageProps } from 'next/image'
 
 export const KsImage = (
@@ -7,7 +9,7 @@ export const KsImage = (
     fallbackIconName?: KsIconNameType
   } & ImageProps
 ) => {
-  return props.src?.length ? (
+  return props.src?.length > 0 ? (
     <Image {...props} />
   ) : (
     <KsIcon name={props.fallbackIconName ?? 'info'} />

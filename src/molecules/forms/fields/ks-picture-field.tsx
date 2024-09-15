@@ -1,3 +1,4 @@
+import { FileUploader, StorageImage } from '@aws-amplify/ui-react-storage'
 import {
   Button,
   FormDescription,
@@ -7,8 +8,7 @@ import {
   FormMessage,
   LoadingSpinner,
   Small,
-} from '@/atoms'
-import { StorageImage, StorageManager } from '@aws-amplify/ui-react-storage'
+} from '@covision/elements/atoms'
 import { remove } from 'aws-amplify/storage'
 import { clsx } from 'clsx'
 import { useFormContext } from 'react-hook-form'
@@ -36,7 +36,7 @@ export const KsPictureField = ({
         return (
           <FormItem>
             <FormLabel>{formLabel}</FormLabel>
-            <StorageManager
+            <FileUploader
               acceptedFileTypes={['image/*']}
               path={({ identityId }) => `${pictureStoragePath}/${identityId}/`}
               defaultFiles={
@@ -90,7 +90,7 @@ export const KsPictureField = ({
                   return (
                     <div
                       className={clsx(
-                        'flex flex-col items-center gap-4 rounded border border-2 border-dotted p-8 align-middle',
+                        'flex flex-col items-center gap-4 rounded border-4 border-gray-200 border-dotted p-8 align-middle',
                         inDropZone ?? 'bg-gray-200'
                       )}
                       {...rest}

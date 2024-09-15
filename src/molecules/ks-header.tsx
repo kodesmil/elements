@@ -1,5 +1,5 @@
-import { KsDropdownMenu } from '@/molecules/dashboard/ks-dropdown-menu'
-import { KsSheet } from '@/molecules/ks-sheet'
+import { KsDropdownMenu } from '@covision/elements/molecules/dashboard/ks-dropdown-menu'
+import { KsSheet } from '@covision/elements/molecules/ks-sheet'
 import type { ReactNode } from 'react'
 
 export function KsHeader(props: {

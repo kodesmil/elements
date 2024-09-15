@@ -1,10 +1,10 @@
-import { Button } from '@/atoms/shacdn/ui/button'
+import { Button } from '@covision/elements/atoms/shacdn/ui/button'
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@/atoms/shacdn/ui/popover'
-import { Text } from '@/atoms/shacdn/ui/text'
+} from '@covision/elements/atoms/shacdn/ui/popover'
+import { Text } from '@covision/elements/atoms/shacdn/ui/text'
 import {
   Check,
   CheckSquare,

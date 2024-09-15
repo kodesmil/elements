@@ -1,4 +1,4 @@
-import { Button } from '@/atoms'
+import { Button } from '@covision/elements/atoms'
 import { type FC, useState } from 'react'
 
 interface KsCopyButtonProps {
@@ -19,9 +19,7 @@ export const KsCopyButton: FC<KsCopyButtonProps> = ({
       await navigator.clipboard.writeText(textToCopy)
       setIsCopied(true)
       setTimeout(() => setIsCopied(false), 3000)
-    } catch (error) {
-      console.error('Failed to copy text:', error)
-    }
+    } catch (_error) {}
   }
 
   return (
