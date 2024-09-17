@@ -9,6 +9,7 @@ export const KsNameField = (props: {
   formDescription: string
   generateButtonName: string
 }) => {
+  const { generateButtonName } = props
   const form = useFormContext()
   return (
     <KsTextField
@@ -20,7 +21,9 @@ export const KsNameField = (props: {
           onClick={() => {
             form.setValue(props.formField, generateSillyname())
           }}
-        />
+        >
+          {generateButtonName}
+        </Button>
       }
     />
   )
