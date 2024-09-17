@@ -12,6 +12,7 @@ export * from './forms/ks-form-subsection'
 export * from './forms/fields/ks-name-field'
 export * from './forms/fields/ks-picture-field'
 export * from './forms/fields/ks-text-field'
+export * from './forms/fields/ks-select-field'
 export * from './forms/fields/ks-text-area-field'
 export * from './forms/fields/ks-text-editor-field'
 
