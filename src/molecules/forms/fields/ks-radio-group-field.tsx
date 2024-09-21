@@ -29,7 +29,11 @@ export const KsRadioGroupField = (props: {
             <div className="flex flex-row items-center gap-2">
               <RadioGroup
                 onValueChange={field.onChange}
-                defaultValue={field.value}
+                defaultValue={
+                  field.value === undefined || field.value === null
+                    ? undefined
+                    : String(field.value)
+                }
                 className="flex flex-col space-y-1"
               >
                 {selections.map((selection) => (
