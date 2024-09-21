@@ -69,18 +69,12 @@ const linkSelf = async () => {
   await new Promise((resolve) => {
     childProcess.exec('pnpm link:self', (error, _stdout, _stderr) => {
       if (error) {
-        console.error(`exec error: ${error}`)
         return
       }
 
       resolve(undefined)
     })
   })
-
-  // biome-ignore lint/suspicious/noConsoleLog: <explanation>
-  console.log(
-    `Run 'pnpm link ${await getPackageName()} --global' inside another project to consume this package.`
-  )
 }
 
 export default defineConfig([

@@ -1,5 +1,8 @@
+'use client'
+
 import type * as LabelPrimitive from '@radix-ui/react-label'
 import { Slot } from '@radix-ui/react-slot'
+import * as React from 'react'
 import {
   Controller,
   type ControllerProps,
@@ -11,7 +14,6 @@ import {
 
 import { Label } from '@covision/elements/atoms/shacdn/ui/label'
 import { cn } from '@covision/elements/lib/utils'
-import React from 'react'
 
 const Form = FormProvider
 
@@ -90,7 +92,14 @@ const FormLabel = React.forwardRef<
 >(({ className, ...props }, ref) => {
   const { error, formItemId } = useFormField()
 
-  return <Label ref={ref} htmlFor={formItemId} />
+  return (
+    <Label
+      ref={ref}
+      className={cn(error && 'text-destructive', className)}
+      htmlFor={formItemId}
+      {...props}
+    />
+  )
 })
 FormLabel.displayName = 'FormLabel'
 
@@ -124,7 +133,7 @@ const FormDescription = React.forwardRef<
     <p
       ref={ref}
       id={formDescriptionId}
-      className={cn('text-[0.8rem] text-muted-foreground', className)}
+      className={cn('text-muted-foreground text-sm', className)}
       {...props}
     />
   )
@@ -144,9 +153,10 @@ const FormMessage = React.forwardRef<
 
   return (
     <p
-      className={cn('text-[0.8rem] text-muted-foreground', className)}
       ref={ref}
       id={formMessageId}
+      className={cn('font-medium text-destructive text-sm', className)}
+      {...props}
     >
       {body}
     </p>
