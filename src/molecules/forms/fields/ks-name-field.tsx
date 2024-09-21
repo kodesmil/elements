@@ -4,10 +4,10 @@ import { KsTextField } from '@covision/elements/molecules/forms/fields/ks-text-f
 import { useFormContext } from 'react-hook-form'
 
 export const KsNameField = (props: {
-  formLabel: string
   formField: string
-  formDescription: string
-  generateButtonName: string
+  formLabel?: string
+  formDescription?: string
+  generateButtonName?: string
 }) => {
   const { generateButtonName } = props
   const form = useFormContext()
@@ -22,7 +22,7 @@ export const KsNameField = (props: {
             form.setValue(props.formField, generateSillyname())
           }}
         >
-          {generateButtonName}
+          {generateButtonName ?? 'Generate'}
         </Button>
       }
     />

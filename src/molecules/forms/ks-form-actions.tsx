@@ -10,12 +10,17 @@ export function KsFormActions(props: {
   return (
     <div className="flex flex-row justify-between">
       {props.onDelete && (
-        <Button variant="destructive" color="red" onClick={props.onDelete}>
+        <Button
+          type={'button'}
+          variant="destructive"
+          color="red"
+          onClick={props.onDelete}
+        >
           {props.deleteText}
         </Button>
       )}
       <div className="flex flex-row space-x-4">
-        <Button variant="ghost" onClick={props.onCancel}>
+        <Button type={'button'} variant="ghost" onClick={props.onCancel}>
           {props.cancelText}
         </Button>
         <Button type="submit">{props.submitText}</Button>
