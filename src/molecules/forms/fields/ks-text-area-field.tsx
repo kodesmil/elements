@@ -10,22 +10,25 @@ import {
 import { useFormContext } from 'react-hook-form'
 
 export const KsTextAreaField = (props: {
-  formLabel: string
   formField: string
-  formDescription: string
+  formLabel?: string
+  formDescription?: string
 }) => {
+  const { formDescription, formLabel, formField } = props
   const form = useFormContext()
   return (
     <FormField
       control={form.control}
-      name={props.formField}
+      name={formField}
       render={({ field }) => (
         <FormItem>
-          <FormLabel>{props.formLabel}</FormLabel>
+          {formLabel && <FormLabel>{formLabel}</FormLabel>}
           <FormControl>
             <Textarea className={'text-base'} rows={5} {...field} />
           </FormControl>
-          <FormDescription>{props.formDescription}</FormDescription>
+          {formDescription && (
+            <FormDescription>{formDescription}</FormDescription>
+          )}
           <FormMessage />
         </FormItem>
       )}

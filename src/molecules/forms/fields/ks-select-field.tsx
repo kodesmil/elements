@@ -14,9 +14,9 @@ import {
 import { useFormContext } from 'react-hook-form'
 
 export const KsSelectField = (props: {
-  formLabel: string
   formField: string
-  formDescription: string
+  formLabel?: string
+  formDescription?: string
   placeholder: string
   selections: { value: string; name: string }[]
 }) => {
@@ -29,7 +29,7 @@ export const KsSelectField = (props: {
       name={formField}
       render={({ field }) => (
         <FormItem>
-          <FormLabel>{formLabel}</FormLabel>
+          {formLabel && <FormLabel>{formLabel}</FormLabel>}
           <FormControl>
             <div className="flex flex-row items-center gap-2">
               <Select value={field.value} onValueChange={field.onChange}>
@@ -46,7 +46,9 @@ export const KsSelectField = (props: {
               </Select>
             </div>
           </FormControl>
-          <FormDescription>{formDescription}</FormDescription>
+          {formDescription && (
+            <FormDescription>{formDescription}</FormDescription>
+          )}
           <FormMessage />
         </FormItem>
       )}

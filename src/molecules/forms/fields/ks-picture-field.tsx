@@ -14,9 +14,9 @@ import { clsx } from 'clsx'
 import { useFormContext } from 'react-hook-form'
 
 export type KsPictureFieldProps = {
-  formLabel: string
   formField: string
-  formDescription: string
+  formLabel?: string
+  formDescription?: string
   pictureStoragePath?: string
 }
 
@@ -35,7 +35,7 @@ export const KsPictureField = ({
         const defaultFile = field.value
         return (
           <FormItem>
-            <FormLabel>{formLabel}</FormLabel>
+            {formLabel && <FormLabel>{formLabel}</FormLabel>}
             <FileUploader
               acceptedFileTypes={['image/*']}
               path={({ identityId }) => `${pictureStoragePath}/${identityId}/`}
@@ -157,7 +157,9 @@ export const KsPictureField = ({
                 },
               }}
             />
-            <FormDescription>{formDescription}</FormDescription>
+            {formDescription && (
+              <FormDescription>{formDescription}</FormDescription>
+            )}
             <FormMessage />
           </FormItem>
         )
