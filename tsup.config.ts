@@ -18,7 +18,6 @@ const nextJsOptions: Options = {
   treeshake: false,
   splitting: true,
   format: ['esm'],
-  external: ['next', 'react', 'react-dom'],
   esbuildOptions(options) {
     options.banner = {
       js: '"use client"',
