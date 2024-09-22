@@ -5,5 +5,6 @@ export const KsTextField = (props: {
   formField: string
   formLabel?: string
   formDescription?: string
+  className?: string
   action?: ReactNode
 }) => <KsInputField {...props} />

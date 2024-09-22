@@ -13,6 +13,7 @@ export function KsTextEditorField(props: {
   formField: string
   formLabel?: string
   formDescription?: string
+  className?: string
 }) {
   const { formDescription, formLabel, formField } = props
   const form = useFormContext()

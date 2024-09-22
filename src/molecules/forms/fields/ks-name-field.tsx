@@ -8,23 +8,26 @@ export const KsNameField = (props: {
   formLabel?: string
   formDescription?: string
   generateButtonName?: string
+  className?: string
 }) => {
-  const { generateButtonName } = props
+  const { generateButtonName, className, formField } = props
   const form = useFormContext()
   return (
-    <KsTextField
-      {...props}
-      action={
-        <Button
-          type="button"
-          variant={'secondary'}
-          onClick={() => {
-            form.setValue(props.formField, generateSillyname())
-          }}
-        >
-          {generateButtonName ?? 'Generate'}
-        </Button>
-      }
-    />
+    <div className={className}>
+      <KsTextField
+        {...props}
+        action={
+          <Button
+            type="button"
+            variant={'secondary'}
+            onClick={() => {
+              form.setValue(formField, generateSillyname())
+            }}
+          >
+            {generateButtonName ?? 'Generate'}
+          </Button>
+        }
+      />
+    </div>
   )
 }

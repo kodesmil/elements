@@ -13,25 +13,28 @@ export const KsTextAreaField = (props: {
   formField: string
   formLabel?: string
   formDescription?: string
+  className?: string
 }) => {
-  const { formDescription, formLabel, formField } = props
+  const { formDescription, formLabel, formField, className } = props
   const form = useFormContext()
   return (
-    <FormField
-      control={form.control}
-      name={formField}
-      render={({ field }) => (
-        <FormItem>
-          {formLabel && <FormLabel>{formLabel}</FormLabel>}
-          <FormControl>
-            <Textarea className={'text-base'} rows={5} {...field} />
-          </FormControl>
-          {formDescription && (
-            <FormDescription>{formDescription}</FormDescription>
-          )}
-          <FormMessage />
-        </FormItem>
-      )}
-    />
+    <div className={className}>
+      <FormField
+        control={form.control}
+        name={formField}
+        render={({ field }) => (
+          <FormItem>
+            {formLabel && <FormLabel>{formLabel}</FormLabel>}
+            <FormControl>
+              <Textarea className={'text-base'} rows={5} {...field} />
+            </FormControl>
+            {formDescription && (
+              <FormDescription>{formDescription}</FormDescription>
+            )}
+            <FormMessage />
+          </FormItem>
+        )}
+      />
+    </div>
   )
 }
