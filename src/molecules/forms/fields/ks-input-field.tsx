@@ -34,7 +34,7 @@ export const KsInputField = (props: {
         name={formField}
         render={({ field }) => (
           <FormItem>
-            <FormLabel>{formLabel}</FormLabel>
+            {formLabel && <FormLabel>{formLabel}</FormLabel>}
             <FormControl>
               <div className="flex flex-row items-center gap-2">
                 <Input {...field} type={formInputType ?? 'text'} />
