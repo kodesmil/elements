@@ -8,10 +8,8 @@ interface KsIconProps extends LucideProps {
   name: KsIconNameType
 }
 
-const KsIcon = ({ name, ...props }: KsIconProps) => {
+export const KsIcon = ({ name, ...props }: KsIconProps) => {
   const LucideIcon = dynamic(dynamicIconImports[name])
 
   return <LucideIcon {...props} />
 }
-
-export default KsIcon

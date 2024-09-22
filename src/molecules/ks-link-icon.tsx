@@ -1,4 +1,5 @@
-import KsIcon, {
+import {
+  KsIcon,
   type KsIconNameType,
 } from '@covision/elements/molecules/ks-icon'
 import clsx from 'clsx'
