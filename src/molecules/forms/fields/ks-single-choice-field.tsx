@@ -10,7 +10,7 @@ import {
 } from '@covision/elements/atoms'
 import { useFormContext } from 'react-hook-form'
 
-export const KsRadioGroupField = (props: {
+export const KsSingleChoiceField = (props: {
   formField: string
   formLabel?: string
   formDescription?: string

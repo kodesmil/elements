@@ -1,10 +1,10 @@
 import { Form } from '@covision/elements/atoms'
 import type { Meta, StoryObj } from '@storybook/react'
 import { useForm } from 'react-hook-form'
-import { KsRadioGroupField } from './ks-radio-group-field'
+import { KsSingleChoiceField } from './ks-single-choice-field'
 
 const meta = {
-  component: KsRadioGroupField,
+  component: KsSingleChoiceField,
   decorators: [
     (Story) => {
       const form = useForm()
@@ -17,7 +17,7 @@ const meta = {
       )
     },
   ],
-} satisfies Meta<typeof KsRadioGroupField>
+} satisfies Meta<typeof KsSingleChoiceField>
 
 export default meta
 
