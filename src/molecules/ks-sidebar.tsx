@@ -18,9 +18,9 @@ const linkClassName = (selected: boolean | undefined) => {
   return clsx(
     'flex h-9 w-9 items-center justify-center md:h-8 md:w-8',
     selected &&
-      'group shrink-0 gap-2 rounded-full bg-primary font-semibold text-lg text-primary-foreground md:text-base',
+      'group shrink-0 gap-2 rounded-full bg-accent font-semibold text-accent-foreground text-lg md:text-base',
     !selected &&
-      'rounded-lg text-muted-foreground transition-colors hover:text-foreground'
+      'rounded-lg text-foreground transition-colors hover:text-foreground/10'
   )
 }
 const iconClassName = (selected: boolean | undefined) => {
@@ -35,7 +35,7 @@ export function KsSidebar(props: {
   lowerItems: TSidebarItem[]
 }) {
   return (
-    <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col border-r bg-background sm:flex">
+    <aside className="fixed inset-y-0 left-0 z-10 hidden w-14 flex-col bg-primary sm:flex">
       <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
         {props.upperItems?.map(({ href, selected, icon, name, tooltip }) => (
           <KsTooltip key={name} tooltip={tooltip}>
