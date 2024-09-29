@@ -20,7 +20,7 @@ const linkClassName = (selected: boolean | undefined) => {
     selected &&
       'group shrink-0 gap-2 rounded-full bg-accent font-semibold text-accent-foreground text-lg md:text-base',
     !selected &&
-      'rounded-lg text-foreground transition-colors hover:text-foreground/10'
+      'rounded-lg text-primary-foreground transition-colors hover:text-primary-foreground/50'
   )
 }
 const iconClassName = (selected: boolean | undefined) => {
