@@ -1,6 +1,6 @@
 {
   "name": "@covision/elements",
-  "version": "0.1.38",
+  "version": "0.1.39",
   "description": "",
   "keywords": [],
   "repository": {
@@ -176,6 +176,9 @@
     "@tiptap/extension-text-align": "^2",
     "@tiptap/react": "^2",
     "@tiptap/starter-kit": "^2",
+    "@tiptap/extension-color": "^2",
+    "@tiptap/extension-list-item": "^2",
+    "@tiptap/extension-text-style": "^2",
     "aws-amplify": "^6",
     "class-variance-authority": "^0",
     "clsx": "^2",
@@ -200,10 +203,7 @@
     "tiptap-extension-auto-joiner": "^0",
     "typewriter-effect": "^2",
     "vaul": "^0",
-    "zod": "^3",
-    "@tiptap/extension-color": "^2",
-    "@tiptap/extension-list-item": "^2",
-    "@tiptap/extension-text-style": "^2"
+    "zod": "^3"
   },
   "engines": {
     "node": ">=20"
