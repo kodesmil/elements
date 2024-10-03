@@ -1,6 +1,6 @@
 {
   "name": "@covision/elements",
-  "version": "0.1.39",
+  "version": "0.1.40",
   "description": "",
   "keywords": [],
   "repository": {
@@ -9,9 +9,7 @@
   },
   "license": "",
   "author": "Covision Studio",
-  "sideEffects": [
-    "*.css"
-  ],
+  "sideEffects": ["*.css"],
   "exports": {
     ".": {
       "types": "./dist/index.d.mts",
@@ -38,9 +36,7 @@
     "./molecules/styles.css": "./dist/molecules/index.css"
   },
   "types": "./dist/index.d.mts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "tsup",
     "build-storybook": "storybook build",
@@ -62,9 +58,7 @@
     }
   },
   "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
+    "extends": ["plugin:storybook/recommended"]
   },
   "resolutions": {},
   "devDependencies": {
