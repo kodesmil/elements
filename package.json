@@ -27,6 +27,10 @@
       "types": "./dist/molecules/index.d.mts",
       "import": "./dist/molecules/index.mjs"
     },
+    "./molecules/ssr": {
+      "types": "./dist/molecules/ssr/index.d.mts",
+      "import": "./dist/molecules/ssr/index.mjs"
+    },
     "./styles.css": "./dist/index.css",
     "./atoms/styles.css": "./dist/atoms/index.css",
     "./molecules/styles.css": "./dist/molecules/index.css"
