@@ -51,6 +51,11 @@ export default defineConfig([
       await linkSelf()
     },
     ...nextJsOptions,
+  },
+  {
+    async onSuccess() {
+      await linkSelf()
+    },
     ...nextSsrJsOptions,
   },
 ])
