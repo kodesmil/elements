@@ -27,7 +27,6 @@ export * from './pages/ks-page-section'
 export * from './pages/ks-page-section-header'
 
 export * from './text-editor/text-editor'
-export * from './text-editor/defaultValue'
 export * from './text-editor/extensions'
 
 export * from './ks-breadcrumb'
