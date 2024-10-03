@@ -4,12 +4,12 @@ export const MenuBar = () => {
   const { editor } = useCurrentEditor()
 
   if (!editor) {
-    return null
+    return <div>Hello</div>
   }
 
   return (
-    <div className="control-group">
-      <div className="button-group">
+    <div className="flex w-full flex-wrap">
+      <div className="flex flex-row space-x-2">
         <button
           type={'button'}
           onClick={() => editor.chain().focus().toggleBold().run()}
