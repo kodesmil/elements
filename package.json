@@ -172,6 +172,9 @@
     "@tanstack/react-query-next-experimental": "^5",
     "@tippyjs/react": "^4",
     "@tiptap/core": "^2",
+    "@tiptap/extension-highlight": "^2",
+    "@tiptap/extension-text-align": "^2",
+    "@tiptap/react": "^2",
     "@tiptap/starter-kit": "^2",
     "aws-amplify": "^6",
     "class-variance-authority": "^0",
@@ -186,7 +189,6 @@
     "next": "^14",
     "next-themes": "^0",
     "nextjs-routes": "^2",
-    "novel": "^0",
     "react": "^18",
     "react-day-picker": "^9",
     "react-dom": "^18",
@@ -198,7 +200,10 @@
     "tiptap-extension-auto-joiner": "^0",
     "typewriter-effect": "^2",
     "vaul": "^0",
-    "zod": "^3"
+    "zod": "^3",
+    "@tiptap/extension-color": "^2",
+    "@tiptap/extension-list-item": "^2",
+    "@tiptap/extension-text-style": "^2"
   },
   "engines": {
     "node": ">=20"
