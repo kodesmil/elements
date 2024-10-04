@@ -32,7 +32,8 @@ module.exports = {
         'destructive-foreground': 'hsl(var(--destructive-foreground))',
         border: 'hsl(var(--border))',
         ring: 'hsl(var(--ring))',
-        input: 'hsl(var(--input))',
+        'input-border': 'hsl(var(--input-border))',
+        'input-background': 'hsl(var(--input-background))',
       },
       keyframes: {
         'accordion-down': {

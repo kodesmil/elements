@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Form } from '@covision/elements/atoms'
+import { Form, TooltipProvider } from '@covision/elements/atoms'
 import { useForm } from 'react-hook-form'
 import { KsTextEditorField } from './ks-text-editor-field'
 const defaultP = `
@@ -32,11 +32,13 @@ const meta = {
         defaultValues: { example: defaultHtml },
       })
       return (
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(() => {})}>
-            <Story />
-          </form>
-        </Form>
+        <TooltipProvider>
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(() => {})}>
+              <Story />
+            </form>
+          </Form>
+        </TooltipProvider>
       )
     },
   ],

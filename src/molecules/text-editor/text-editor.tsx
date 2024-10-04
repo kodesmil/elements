@@ -13,7 +13,7 @@ export const KsTextEditor = ({ defaultValue, onChange }: EditorProp) => {
     <div
       className={cx(
         'ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
-        'prose prose-lg dark:prose-invert max-w-full rounded-md border border-input bg-background px-3 py-2 font-serif prose-headings:font-title text-foreground'
+        'prose prose-lg dark:prose-invert max-w-full rounded-md border border-input-border bg-input-background px-3 py-2 font-serif prose-headings:font-title text-foreground'
       )}
     >
       <EditorProvider
