@@ -22,8 +22,7 @@ export const KsTextEditor = ({ defaultValue, onChange }: EditorProp) => {
         editorProps={{
           attributes: {
             class: cx(
-              'ring-offset-background placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50',
-              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2',
+              'm-auto placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50',
               'focus:outline-none prose prose-lg dark:prose-invert prose-headings:font-title font-serif'
             ),
           },
