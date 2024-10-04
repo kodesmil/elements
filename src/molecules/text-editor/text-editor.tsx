@@ -12,8 +12,7 @@ export const KsTextEditor = ({ defaultValue, onChange }: EditorProp) => {
   return (
     <div
       className={cx(
-        'ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
-        'min-w-max max-w-full rounded-md border border-input-border bg-input-background px-3 py-2 font-serif'
+        'min-w-max max-w-full rounded-md border border-input-border bg-input-background px-3 py-2'
       )}
     >
       <EditorProvider
@@ -22,8 +21,11 @@ export const KsTextEditor = ({ defaultValue, onChange }: EditorProp) => {
         extensions={defaultExtensions}
         editorProps={{
           attributes: {
-            class:
-              'focus:outline-none prose prose-lg dark:prose-invert prose-headings:font-title',
+            class: cx(
+              'ring-offset-background placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50',
+              'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2',
+              'focus:outline-none prose prose-lg dark:prose-invert prose-headings:font-title font-serif'
+            ),
           },
         }}
         onUpdate={({ editor }) => {
