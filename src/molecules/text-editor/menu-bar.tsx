@@ -49,7 +49,7 @@ export const MenuBar = () => {
   }
 
   return (
-    <div className="sticky top-12 z-50 flex w-full justify-around pb-16">
+    <div className="sticky top-0 z-50 flex w-full justify-around pt-8 pb-12">
       <div className="flex flex-wrap space-x-2 rounded px-3 py-2 backdrop-blur-lg backdrop-filter">
         <div className="flex flex-row">
           <MenuButton
