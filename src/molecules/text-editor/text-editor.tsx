@@ -12,7 +12,7 @@ export const KsTextEditor = ({ defaultValue, onChange }: EditorProp) => {
   return (
     <div
       className={cx(
-        'min-w-max max-w-full rounded-md border border-input-border bg-input-background px-3 pt-8 pb-12'
+        'min-w-max max-w-full rounded-md border border-input-border bg-input-background px-3 pb-12'
       )}
     >
       <EditorProvider
