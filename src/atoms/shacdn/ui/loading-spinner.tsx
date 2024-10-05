@@ -1,6 +1,6 @@
 'use client'
 
-import { cn } from '@covision/elements/lib/utils'
+import { cn } from '@kodesmil/elements/lib/utils'
 import * as React from 'react'
 
 const spinnerVariants =

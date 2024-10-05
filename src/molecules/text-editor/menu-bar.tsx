@@ -1,5 +1,5 @@
-import { Button, type ButtonProps } from '@covision/elements/atoms'
-import { KsTooltip } from '@covision/elements/molecules'
+import { Button, type ButtonProps } from '@kodesmil/elements/atoms'
+import { KsTooltip } from '@kodesmil/elements/molecules'
 import { ListBulletIcon } from '@radix-ui/react-icons'
 import { useCurrentEditor } from '@tiptap/react'
 import {

@@ -5,7 +5,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from '@covision/elements/atoms/shacdn/ui/breadcrumb'
+} from '@kodesmil/elements/atoms/shacdn/ui/breadcrumb'
 import Link from 'next/link'
 import React from 'react'
 

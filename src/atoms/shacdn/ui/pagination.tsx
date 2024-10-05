@@ -4,8 +4,8 @@ import * as React from 'react'
 import {
   type ButtonProps,
   buttonVariants,
-} from '@covision/elements/atoms/shacdn/ui/button'
-import { cn } from '@covision/elements/lib/utils'
+} from '@kodesmil/elements/atoms/shacdn/ui/button'
+import { cn } from '@kodesmil/elements/lib/utils'
 
 const Pagination = ({ className, ...props }: React.ComponentProps<'nav'>) => (
   <nav

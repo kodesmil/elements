@@ -1,4 +1,4 @@
-import { Head1, Text } from '@covision/elements/atoms/shacdn/ui/text'
+import { Head1, Text } from '@kodesmil/elements/atoms/shacdn/ui/text'
 
 type TFormHeaderProps = {
   title: string

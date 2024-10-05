@@ -1,4 +1,4 @@
-import { cn } from '@covision/elements/lib/utils'
+import { cn } from '@kodesmil/elements/lib/utils'
 import type React from 'react'
 
 function Skeleton({

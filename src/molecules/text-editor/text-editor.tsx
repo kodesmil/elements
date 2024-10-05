@@ -1,5 +1,5 @@
-import { defaultExtensions } from '@covision/elements/molecules'
-import { MenuBar } from '@covision/elements/molecules/text-editor/menu-bar'
+import { defaultExtensions } from '@kodesmil/elements/molecules'
+import { MenuBar } from '@kodesmil/elements/molecules/text-editor/menu-bar'
 import { EditorProvider } from '@tiptap/react'
 import { cx } from 'class-variance-authority'
 

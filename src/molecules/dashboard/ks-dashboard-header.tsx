@@ -1,5 +1,5 @@
-import { Button } from '@covision/elements/atoms'
-import { Head3 } from '@covision/elements/atoms/shacdn/ui/text'
+import { Button } from '@kodesmil/elements/atoms'
+import { Head3 } from '@kodesmil/elements/atoms/shacdn/ui/text'
 import type { ReactNode } from 'react'
 
 export function KsDashboardHeader(props: {

@@ -6,7 +6,7 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@covision/elements/atoms'
+} from '@kodesmil/elements/atoms'
 import { useFormContext } from 'react-hook-form'
 
 export const KsMultiChoiceField = (props: {

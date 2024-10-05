@@ -1,9 +1,9 @@
-import { Button } from '@covision/elements/atoms/shacdn/ui/button'
+import { Button } from '@kodesmil/elements/atoms/shacdn/ui/button'
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
-} from '@covision/elements/atoms/shacdn/ui/sheet'
+} from '@kodesmil/elements/atoms/shacdn/ui/sheet'
 import {
   Home,
   LineChart,

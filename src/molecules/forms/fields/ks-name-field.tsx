@@ -1,6 +1,6 @@
-import { Button } from '@covision/elements/atoms'
-import { generateSillyname } from '@covision/elements/lib'
-import { KsTextField } from '@covision/elements/molecules/forms/fields/ks-text-field'
+import { Button } from '@kodesmil/elements/atoms'
+import { generateSillyname } from '@kodesmil/elements/lib'
+import { KsTextField } from '@kodesmil/elements/molecules/forms/fields/ks-text-field'
 import { useFormContext } from 'react-hook-form'
 
 export const KsNameField = (props: {

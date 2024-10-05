@@ -10,7 +10,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@covision/elements/atoms'
+} from '@kodesmil/elements/atoms'
 import { useFormContext } from 'react-hook-form'
 
 export const KsSelectField = (props: {

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { KsFormHeader } from '@covision/elements/molecules'
+import { KsFormHeader } from '@kodesmil/elements/molecules'
 
 const meta = {
   component: KsFormHeader,
