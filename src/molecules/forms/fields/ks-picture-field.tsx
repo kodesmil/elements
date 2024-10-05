@@ -26,7 +26,7 @@ export const KsPictureField = ({
   formField,
   formDescription,
   className,
-  pictureStoragePath = 'media/blog-posts-pictures',
+  pictureStoragePath = 'media/articles-pictures',
 }: KsPictureFieldProps) => {
   const form = useFormContext()
   return (
