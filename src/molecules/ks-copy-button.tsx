@@ -1,4 +1,4 @@
-import { Button } from '@kodesmil/elements/atoms'
+import { Button } from '@covision/elements/atoms'
 import { type FC, useState } from 'react'
 
 interface KsCopyButtonProps {

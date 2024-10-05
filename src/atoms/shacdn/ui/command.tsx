@@ -8,8 +8,8 @@ import * as React from 'react'
 import {
   Dialog,
   DialogContent,
-} from '@kodesmil/elements/atoms/shacdn/ui/dialog'
-import { cn } from '@kodesmil/elements/lib/utils'
+} from '@covision/elements/atoms/shacdn/ui/dialog'
+import { cn } from '@covision/elements/lib/utils'
 
 const Command = React.forwardRef<
   React.ElementRef<typeof CommandPrimitive>,

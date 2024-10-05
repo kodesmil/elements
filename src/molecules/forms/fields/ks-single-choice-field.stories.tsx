@@ -1,4 +1,4 @@
-import { Form } from '@kodesmil/elements/atoms'
+import { Form } from '@covision/elements/atoms'
 import type { Meta, StoryObj } from '@storybook/react'
 import { useForm } from 'react-hook-form'
 import { KsSingleChoiceField } from './ks-single-choice-field'

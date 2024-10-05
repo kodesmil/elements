@@ -12,8 +12,8 @@ import {
   useFormContext,
 } from 'react-hook-form'
 
-import { Label } from '@kodesmil/elements/atoms/shacdn/ui/label'
-import { cn } from '@kodesmil/elements/lib/utils'
+import { Label } from '@covision/elements/atoms/shacdn/ui/label'
+import { cn } from '@covision/elements/lib/utils'
 
 const Form = FormProvider
 

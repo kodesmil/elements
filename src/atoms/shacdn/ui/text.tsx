@@ -1,4 +1,4 @@
-import { cn } from '@kodesmil/elements/lib/utils'
+import { cn } from '@covision/elements/lib/utils'
 import type { ComponentPropsWithoutRef } from 'react'
 
 export function Head1(props: ComponentPropsWithoutRef<'h1'>) {

@@ -1,5 +1,5 @@
-import { KsDropdownMenu } from '@kodesmil/elements/molecules/dashboard/ks-dropdown-menu'
-import { KsSheet } from '@kodesmil/elements/molecules/ks-sheet'
+import { KsDropdownMenu } from '@covision/elements/molecules/dashboard/ks-dropdown-menu'
+import { KsSheet } from '@covision/elements/molecules/ks-sheet'
 import type { ReactNode } from 'react'
 import { cn } from '../lib'
 

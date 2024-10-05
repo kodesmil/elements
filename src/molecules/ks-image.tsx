@@ -1,7 +1,7 @@
 import {
   KsIcon,
   type KsIconNameType,
-} from '@kodesmil/elements/molecules/ks-icon'
+} from '@covision/elements/molecules/ks-icon'
 import Image, { type ImageProps } from 'next/image'
 
 export const KsImage = (

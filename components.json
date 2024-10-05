@@ -10,10 +10,10 @@
     "cssVariables": false
   },
   "aliases": {
-    "lib": "@kodesmil/elements/lib",
-    "utils": "@kodesmil/elements/lib/utils",
-    "hooks": "@kodesmil/elements/atoms/shacdn/hooks",
-    "ui": "@kodesmil/elements/atoms/shacdn/ui",
-    "components": "@kodesmil/elements/atoms/shacdn"
+    "lib": "@covision/elements/lib",
+    "utils": "@covision/elements/lib/utils",
+    "hooks": "@covision/elements/atoms/shacdn/hooks",
+    "ui": "@covision/elements/atoms/shacdn/ui",
+    "components": "@covision/elements/atoms/shacdn"
   }
 }

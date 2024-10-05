@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Form, TooltipProvider } from '@kodesmil/elements/atoms'
+import { Form, TooltipProvider } from '@covision/elements/atoms'
 import { useForm } from 'react-hook-form'
 import { KsTextEditorField } from './ks-text-editor-field'
 const defaultP = `

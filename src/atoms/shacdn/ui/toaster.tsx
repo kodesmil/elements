@@ -1,6 +1,6 @@
 'use client'
 
-import { useToast } from '@kodesmil/elements/atoms/shacdn/hooks/use-toast'
+import { useToast } from '@covision/elements/atoms/shacdn/hooks/use-toast'
 import {
   Toast,
   ToastClose,
@@ -8,7 +8,7 @@ import {
   ToastProvider,
   ToastTitle,
   ToastViewport,
-} from '@kodesmil/elements/atoms/shacdn/ui/toast'
+} from '@covision/elements/atoms/shacdn/ui/toast'
 
 export function Toaster() {
   const { toasts } = useToast()

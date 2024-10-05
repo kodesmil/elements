@@ -6,7 +6,7 @@ import {
   FormLabel,
   FormMessage,
   Input,
-} from '@kodesmil/elements/atoms'
+} from '@covision/elements/atoms'
 import type { HTMLInputTypeAttribute, ReactNode } from 'react'
 import { useFormContext } from 'react-hook-form'
 

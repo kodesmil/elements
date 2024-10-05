@@ -1,4 +1,4 @@
-import { Button } from '@kodesmil/elements/atoms/shacdn/ui/button'
+import { Button } from '@covision/elements/atoms/shacdn/ui/button'
 
 export function KsFormActions(props: {
   submitText: string

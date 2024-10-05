@@ -1,4 +1,4 @@
-import { Head2, Text } from '@kodesmil/elements/atoms/shacdn/ui/text'
+import { Head2, Text } from '@covision/elements/atoms/shacdn/ui/text'
 
 export type KsFormHeaderProps = {
   title: string

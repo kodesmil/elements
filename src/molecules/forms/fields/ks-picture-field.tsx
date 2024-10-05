@@ -8,7 +8,7 @@ import {
   FormMessage,
   LoadingSpinner,
   Small,
-} from '@kodesmil/elements/atoms'
+} from '@covision/elements/atoms'
 import { remove } from 'aws-amplify/storage'
 import { clsx } from 'clsx'
 import { useFormContext } from 'react-hook-form'

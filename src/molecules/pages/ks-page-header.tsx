@@ -1,5 +1,5 @@
-import { Head1 } from '@kodesmil/elements/atoms'
-import { KsBreadcrumb } from '@kodesmil/elements/molecules'
+import { Head1 } from '@covision/elements/atoms'
+import { KsBreadcrumb } from '@covision/elements/molecules'
 
 export function KsPageHeader(props: {
   pageName: string

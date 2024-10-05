@@ -9,7 +9,7 @@
     "strict": true,
     "noEmit": true,
     "paths": {
-      "@kodesmil/elements/*": ["./src/*"]
+      "@covision/elements/*": ["./src/*"]
     }
   },
   "include": [

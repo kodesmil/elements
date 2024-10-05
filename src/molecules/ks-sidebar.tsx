@@ -1,7 +1,7 @@
 import {
   KsIcon,
   type KsIconNameType,
-} from '@kodesmil/elements/molecules/ks-icon'
+} from '@covision/elements/molecules/ks-icon'
 import clsx from 'clsx'
 import Link from 'next/link'
 import { KsTooltip } from './ks-tooltip'
