@@ -16,6 +16,7 @@ import {
   Heading6Icon,
   HighlighterIcon,
   ItalicIcon,
+  LinkIcon,
   ListOrderedIcon,
   QuoteIcon,
   RedoIcon,
@@ -34,7 +35,7 @@ const MenuButton = (
       size={'sm'}
       type={'button'}
       variant={props.isActive ? 'secondary' : 'ghost'}
-      className={'h-8 w-8 rounded-none border border-0 p-1.5'}
+      className={'h-8 w-8 rounded-none border p-1.5'}
       {...props}
     />
   </KsTooltip>
@@ -74,6 +75,29 @@ export const MenuBar = () => {
             isActive={editor.isActive('strike')}
           >
             <StrikethroughIcon />
+          </MenuButton>
+          <MenuButton
+            tooltip={'Link'}
+            onClick={() => {
+              const previousUrl = editor.getAttributes('link').href
+              const url = window.prompt('URL', previousUrl)
+              if (url === null) {
+                return
+              }
+              if (url === '') {
+                editor.chain().focus().extendMarkRange('link').unsetLink().run()
+                return
+              }
+              editor
+                .chain()
+                .focus()
+                .extendMarkRange('link')
+                .setLink({ href: url })
+                .run()
+            }}
+            isActive={editor.isActive('link')}
+          >
+            <LinkIcon />
           </MenuButton>
           <MenuButton
             tooltip={'Code'}

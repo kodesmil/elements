@@ -1,6 +1,7 @@
 import type { Extension, Mark, Node } from '@tiptap/core'
 import { Color } from '@tiptap/extension-color'
 import Highlight from '@tiptap/extension-highlight'
+import Link from '@tiptap/extension-link'
 import ListItem from '@tiptap/extension-list-item'
 import TextAlign from '@tiptap/extension-text-align'
 import TextStyle from '@tiptap/extension-text-style'
@@ -55,7 +56,11 @@ export const defaultExtensions: (Node | Extension | Mark)[] = [
     },
     gapcursor: false,
   }),
-
+  Link.configure({
+    openOnClick: false,
+    autolink: true,
+    defaultProtocol: 'https',
+  }),
   TextAlign.configure({
     types: ['heading', 'paragraph'],
   }),
