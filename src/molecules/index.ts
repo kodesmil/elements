@@ -16,6 +16,7 @@ export * from './forms/fields/ks-text-field'
 export * from './forms/fields/ks-select-field'
 export * from './forms/fields/ks-single-choice-field'
 export * from './forms/fields/ks-multi-choice-field'
+export * from './forms/fields/ks-multi-selector-field'
 export * from './forms/fields/ks-text-area-field'
 export * from './forms/fields/ks-text-editor-field'
 
