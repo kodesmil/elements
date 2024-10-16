@@ -9,6 +9,8 @@ export * from './forms/ks-form-section'
 export * from './forms/ks-form-subheader'
 export * from './forms/ks-form-subsection'
 
+export * from './forms/fields/ks-date-field'
+export * from './forms/fields/ks-date-time-field'
 export * from './forms/fields/ks-name-field'
 export * from './forms/fields/ks-picture-field'
 export * from './forms/fields/ks-input-field'
