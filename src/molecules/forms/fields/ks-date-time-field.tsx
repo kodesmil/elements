@@ -57,7 +57,6 @@ export const KsDateTimeField = (props: {
                   mode="single"
                   selected={field.value}
                   onSelect={field.onChange}
-                  initialFocus={true}
                 />
                 <div className="border-border border-t p-3">
                   <TimePicker setDate={field.onChange} date={field.value} />
