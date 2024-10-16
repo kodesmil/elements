@@ -40,7 +40,7 @@ export const KsDateTimeField = (props: {
         control={form.control}
         name={formField}
         render={({ field }) => (
-          <FormItem className="flex w-full flex-col">
+          <FormItem className="flex w-full flex-row space-x-2">
             {formLabel && <FormLabel>{formLabel}</FormLabel>}
             <Popover open={isOpen} onOpenChange={setIsOpen}>
               <PopoverTrigger asChild={true}>
@@ -48,8 +48,7 @@ export const KsDateTimeField = (props: {
                   <Button
                     variant={'outline'}
                     className={cn(
-                      'w-full font-normal',
-                      !field.value && 'text-muted-foreground'
+                      'w-full rounded-md border border-input-border bg-input-background px-3 py-2 text-base text-foreground'
                     )}
                   >
                     {field.value ? (
