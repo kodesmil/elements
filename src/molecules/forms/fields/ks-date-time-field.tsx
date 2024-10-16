@@ -35,12 +35,12 @@ export const KsDateTimeField = (props: {
   const [date, setDate] = useState<Date | undefined>(undefined)
   const form = useFormContext()
   return (
-    <div className={className}>
+    <div className={cn('flex flex-row space-x-2', className)}>
       <FormField
         control={form.control}
         name={formField}
         render={({ field }) => (
-          <FormItem className="flex w-full flex-row space-x-2">
+          <FormItem className="flex flex-col align-top">
             {formLabel && <FormLabel>{formLabel}</FormLabel>}
             <Popover open={isOpen} onOpenChange={setIsOpen}>
               <PopoverTrigger asChild={true}>
@@ -48,7 +48,7 @@ export const KsDateTimeField = (props: {
                   <Button
                     variant={'outline'}
                     className={cn(
-                      'w-full rounded-md border border-input-border bg-input-background px-3 py-2 text-base text-foreground'
+                      'rounded-md border border-input-border bg-input-background px-3 py-2 text-base text-foreground'
                     )}
                   >
                     {field.value ? (
@@ -111,7 +111,7 @@ export const KsDateTimeField = (props: {
                   }
                 }}
               >
-                <SelectTrigger className="w-[120px] font-normal focus:ring-0">
+                <SelectTrigger className="w-[120px] font-base focus:ring-0">
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
