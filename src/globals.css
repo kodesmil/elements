@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  ::selection {
+    background: var(--highlight);
+  }
+
   :root {
-    --background: 193 90% 96%;
+    --background: 193 90% 92%;
     --foreground: 191 81% 14%;
     --card: 0 0% 100%;
     --card-foreground: 191 81% 14%;
@@ -25,12 +29,9 @@
     --input-background: 193 90% 98%;
     --ring: 315 100% 94%;
     --radius: 1rem;
+    --highlight: hsla(315 100% 94%);
 
     --amplify-components-image-height: 100%;
-
-    ::selection {
-      background: hsl(315 100% 94%);
-    }
   }
 
   [data-amplify-authenticator][data-variation="modal"] {
@@ -38,9 +39,9 @@
   }
 
   .dark {
-    --background: 191 81% 13%;
+    --background: 191 81% 9%;
     --foreground: 193 90% 96%;
-    --card: 191 81% 9%;
+    --card: 191 81% 13%;
     --card-foreground: 193 90% 96%;
     --popover: 191 81% 14%;
     --popover-foreground: 0 0% 100%;
@@ -59,9 +60,6 @@
     --input-background: 191 81% 20%;
     --ring: 315 100% 94%;
     --radius: 1rem;
-
-    ::selection {
-      background: purple;
-    }
+    --highlight: purple;
   }
 }

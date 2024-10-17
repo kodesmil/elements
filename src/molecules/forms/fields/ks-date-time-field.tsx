@@ -65,6 +65,9 @@ export const KsDateTimeField = (props: {
                   mode="single"
                   captionLayout="dropdown"
                   selected={date || field.value}
+                  className={
+                    'border border-input-border bg-input-background text-foreground'
+                  }
                   onSelect={(selectedDate) => {
                     const [hours, minutes] = time?.split(':') ?? [12, 0]
                     selectedDate?.setHours(
