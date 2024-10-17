@@ -48,11 +48,11 @@ export const KsDateTimeField = (props: {
                   <Button
                     variant={'ghost'}
                     className={cn(
-                      'rounded-md border border-input-border bg-input-background px-3 py-2 text-base text-foreground'
+                      'rounded-md border border-input-border bg-input-background px-3 py-2 text-base text-foreground hover:bg-black/10 dark:hover:bg-white/10'
                     )}
                   >
                     {field.value ? (
-                      `${format(field.value, 'PPP')}, ${time}`
+                      `${format(field.value, 'PPP')}`
                     ) : (
                       <span>Pick a date</span>
                     )}
@@ -80,10 +80,6 @@ export const KsDateTimeField = (props: {
                   onDayClick={() => setIsOpen(false)}
                   fromYear={2000}
                   toYear={new Date().getFullYear()}
-                  disabled={(date) =>
-                    Number(date) < Date.now() - 1000 * 60 * 60 * 24 ||
-                    Number(date) > Date.now() + 1000 * 60 * 60 * 24 * 30
-                  }
                 />
               </PopoverContent>
             </Popover>
