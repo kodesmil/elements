@@ -46,7 +46,7 @@ export const KsDateTimeField = (props: {
               <PopoverTrigger asChild={true}>
                 <FormControl>
                   <Button
-                    variant={'outline'}
+                    variant={'ghost'}
                     className={cn(
                       'rounded-md border border-input-border bg-input-background px-3 py-2 text-base text-foreground'
                     )}
@@ -60,14 +60,14 @@ export const KsDateTimeField = (props: {
                   </Button>
                 </FormControl>
               </PopoverTrigger>
-              <PopoverContent className="w-auto p-0" align="start">
+              <PopoverContent
+                className="w-auto border border-input-border bg-input-background p-0 text-foreground"
+                align="start"
+              >
                 <Calendar
                   mode="single"
                   captionLayout="dropdown"
                   selected={date || field.value}
-                  className={
-                    'border border-input-border bg-input-background text-foreground'
-                  }
                   onSelect={(selectedDate) => {
                     const [hours, minutes] = time?.split(':') ?? [12, 0]
                     selectedDate?.setHours(
@@ -78,7 +78,8 @@ export const KsDateTimeField = (props: {
                     field.onChange(selectedDate)
                   }}
                   onDayClick={() => setIsOpen(false)}
-                  hidden={{ after: new Date() }}
+                  fromYear={2000}
+                  toYear={new Date().getFullYear()}
                   disabled={(date) =>
                     Number(date) < Date.now() - 1000 * 60 * 60 * 24 ||
                     Number(date) > Date.now() + 1000 * 60 * 60 * 24 * 30
