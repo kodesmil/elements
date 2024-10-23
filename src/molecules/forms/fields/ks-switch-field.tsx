@@ -34,7 +34,6 @@ export const KsSwitchField = (props: {
               <Switch
                 checked={field.value}
                 onCheckedChange={field.onChange}
-                disabled={true}
                 aria-readonly={true}
               />
             </FormControl>
