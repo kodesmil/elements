@@ -5,5 +5,5 @@ type FormSectionProps = {
 }
 
 export const KsFormSection = ({ children }: FormSectionProps) => (
-  <div className={'flex flex-col gap-2 py-4'}>{children}</div>
+  <div className={'flex flex-col space-y-4'}>{children}</div>
 )
