@@ -1,4 +1,3 @@
-import { KsDropdownMenu } from '@covision/elements/molecules/dashboard/ks-dropdown-menu'
 import { KsSheet } from '@covision/elements/molecules/ks-sheet'
 import type { ReactNode } from 'react'
 import { cn } from '../lib'
@@ -17,12 +16,7 @@ export function KsHeader(props: {
       <div className={'flex gap-2'}>
         <KsSheet />
       </div>
-      <div className={'flex items-center gap-4'}>
-        {props.action}
-        <div className={'flex-1'}>
-          <KsDropdownMenu />
-        </div>
-      </div>
+      <div>{props.action}</div>
     </header>
   )
 }
