@@ -158,6 +158,7 @@
     "@radix-ui/react-scroll-area": "^1",
     "@radix-ui/react-select": "^2",
     "@radix-ui/react-separator": "^1",
+    "@radix-ui/react-context": "^1",
     "@radix-ui/react-slider": "^1",
     "@radix-ui/react-slot": "^1",
     "@radix-ui/react-switch": "^1",
