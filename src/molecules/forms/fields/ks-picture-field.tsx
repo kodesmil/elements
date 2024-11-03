@@ -95,8 +95,8 @@ export const KsPictureField = ({
                     return (
                       <div
                         className={clsx(
-                          'flex flex-col items-center gap-4 rounded border-4 border-input-border border-dotted bg-input-background p-8 align-middle',
-                          inDropZone ?? 'bg-gray-200'
+                          'flex flex-col items-center gap-4 rounded border border-neutral-200 border-dotted bg-transparent p-8 align-middle',
+                          inDropZone ?? 'bg-accent/50'
                         )}
                         {...rest}
                       >
@@ -124,7 +124,7 @@ export const KsPictureField = ({
                             <div
                               key={file.key}
                               className={
-                                'flex flex-row items-center justify-between rounded border border-input-border bg-input-background p-3 align-middle'
+                                'flex flex-row items-center justify-between rounded border border-neutral-200 p-3 align-middle'
                               }
                             >
                               <div
