@@ -3,7 +3,7 @@ const { join } = require('node:path')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ['class'],
+  darkMode: ['selector', 'class'],
   content: [join(__dirname, './src/**/*.{js,ts,jsx,tsx}')],
   corePlugins: {
     preflight: false,
@@ -32,10 +32,9 @@ module.exports = {
         destructive: 'hsl(var(--destructive) / <alpha-value>)',
         'destructive-foreground':
           'hsl(var(--destructive-foreground) / <alpha-value>)',
+        input: 'hsl(var(--input) / <alpha-value>)',
         border: 'hsl(var(--border) / <alpha-value>)',
         ring: 'hsl(var(--ring) / <alpha-value>)',
-        'input-border': 'hsl(var(--input-border) / <alpha-value>)',
-        'input-background': 'hsl(var(--input-background) / <alpha-value>)',
         sidebar: {
           DEFAULT: 'hsl(var(--sidebar-background))',
           foreground: 'hsl(var(--sidebar-foreground))',
