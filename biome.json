@@ -29,7 +29,9 @@
         "noNodejsModules": "off",
         "useImportExtensions": "off",
         "noUnusedVariables": "off",
-        "noUnusedFunctionParameters": "off"
+        "noUnusedFunctionParameters": "off",
+        "noUndeclaredVariables": "off",
+        "useExhaustiveDependencies": "off"
       },
       "nursery": {
         "useSortedClasses": {
@@ -46,7 +48,8 @@
         "useFocusableInteractive": "off"
       },
       "complexity": {
-        "noExcessiveCognitiveComplexity": "off"
+        "noExcessiveCognitiveComplexity": "off",
+        "noForEach": "off"
       },
       "suspicious": {
         "noArrayIndexKey": "off",
@@ -58,7 +61,8 @@
         "noNamespaceImport": "off",
         "noDefaultExport": "off",
         "useFilenamingConvention": "off",
-        "useNamingConvention": "off"
+        "useNamingConvention": "off",
+        "useDefaultSwitchClause": "off"
       }
     }
   },

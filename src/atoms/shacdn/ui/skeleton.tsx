@@ -1,5 +1,4 @@
 import { cn } from '@covision/elements/lib/utils'
-import type React from 'react'
 
 function Skeleton({
   className,
@@ -7,7 +6,10 @@ function Skeleton({
 }: React.HTMLAttributes<HTMLDivElement>) {
   return (
     <div
-      className={cn('animate-pulse rounded-md bg-muted', className)}
+      className={cn(
+        'animate-pulse rounded-md bg-neutral-900/10 dark:bg-neutral-50/10',
+        className
+      )}
       {...props}
     />
   )
