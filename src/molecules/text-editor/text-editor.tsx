@@ -13,7 +13,7 @@ export const KsTextEditor = ({ defaultValue, onChange }: EditorProp) => {
     <div
       className={cx(
         'min-w-96 max-w-full rounded-md px-3 pb-12',
-        'flex w-full border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:font-medium file:text-foreground file:text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50'
+        'flex w-full flex-col border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:font-medium file:text-foreground file:text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50'
       )}
     >
       <EditorProvider
