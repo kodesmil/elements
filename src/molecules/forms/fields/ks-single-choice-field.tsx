@@ -36,7 +36,7 @@ export const KsSingleChoiceField = (props: {
                       ? undefined
                       : String(field.value)
                   }
-                  className="flex flex-col space-y-1"
+                  className="flex h-min flex-col space-y-1 border-0 bg-background px-3 py-2 text-base"
                 >
                   {selections.map((selection) => (
                     <FormItem

@@ -7,7 +7,7 @@ export function KsPageSection(props: {
   className?: string
 }) {
   return (
-    <div className={cn('flex flex-col gap-8', props.className)}>
+    <div className={cn('flex flex-col gap-12 py-8', props.className)}>
       {props.children}
     </div>
   )

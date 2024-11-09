@@ -37,7 +37,11 @@ export const KsInputField = (props: {
             {formLabel && <FormLabel>{formLabel}</FormLabel>}
             <FormControl>
               <div className="flex flex-row items-center gap-2">
-                <Input {...field} type={formInputType ?? 'text'} />
+                <Input
+                  className={'h-min border-0 bg-background px-3 py-2 text-base'}
+                  {...field}
+                  type={formInputType ?? 'text'}
+                />
                 {action}
               </div>
             </FormControl>

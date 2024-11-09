@@ -50,13 +50,13 @@ export const KsMultiSelectorField = (props: {
                       await form.trigger()
                     }}
                   >
-                    <SelectTrigger className="w-48">
+                    <SelectTrigger className="h-min border-0 bg-background px-3 py-2 text-base">
                       <SelectValue
                         className="min-w-min"
                         placeholder={'Select Tag'}
                       />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className="h-min border-0 bg-background px-3 py-2 text-base">
                       {selections.map((v) => (
                         <SelectItem key={v.value} value={v.value}>
                           {v.name}

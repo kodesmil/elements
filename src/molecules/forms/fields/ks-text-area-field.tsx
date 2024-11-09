@@ -26,7 +26,11 @@ export const KsTextAreaField = (props: {
           <FormItem>
             {formLabel && <FormLabel>{formLabel}</FormLabel>}
             <FormControl>
-              <Textarea rows={5} {...field} />
+              <Textarea
+                className={'h-min border-0 bg-background px-4 py-3 text-base'}
+                rows={5}
+                {...field}
+              />
             </FormControl>
             {formDescription && (
               <FormDescription>{formDescription}</FormDescription>

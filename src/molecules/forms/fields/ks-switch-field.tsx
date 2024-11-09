@@ -32,6 +32,7 @@ export const KsSwitchField = (props: {
             </div>
             <FormControl>
               <Switch
+                className="h-min border-0 bg-background px-3 py-2 text-base"
                 checked={field.value}
                 onCheckedChange={field.onChange}
                 aria-readonly={true}

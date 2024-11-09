@@ -1,14 +1,21 @@
+import { suggestions } from '@covision/elements/molecules/text-editor/suggestions'
+import { Slash } from '@harshtalks/slash-tiptap'
 import type { Extension, Mark, Node } from '@tiptap/core'
 import { Color } from '@tiptap/extension-color'
+import Document from '@tiptap/extension-document'
 import Highlight from '@tiptap/extension-highlight'
 import Link from '@tiptap/extension-link'
 import ListItem from '@tiptap/extension-list-item'
+import Placeholder from '@tiptap/extension-placeholder'
 import TextAlign from '@tiptap/extension-text-align'
 import TextStyle from '@tiptap/extension-text-style'
 import { StarterKit } from '@tiptap/starter-kit'
 import { cx } from 'class-variance-authority'
 
 export const defaultExtensions: (Node | Extension | Mark)[] = [
+  Document.extend({
+    content: 'heading block*',
+  }),
   Color.configure({ types: [TextStyle.name, ListItem.name] }),
   TextStyle.configure(),
   StarterKit.configure({
@@ -65,4 +72,17 @@ export const defaultExtensions: (Node | Extension | Mark)[] = [
     types: ['heading', 'paragraph'],
   }),
   Highlight,
+  Slash.configure({
+    suggestion: {
+      items: () => suggestions,
+    },
+  }),
+  Placeholder.configure({
+    placeholder: ({ node }) => {
+      if (node.type.name === 'heading') {
+        return 'What’s the title?'
+      }
+      return 'Press / to see available commands'
+    },
+  }),
 ]

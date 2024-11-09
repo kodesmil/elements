@@ -48,7 +48,7 @@ export const KsDateTimeField = (props: {
                   <Button
                     variant={'ghost'}
                     className={cn(
-                      'rounded-md border border-input-border bg-input-background px-3 py-2 text-base text-foreground hover:bg-black/10 dark:hover:bg-white/10'
+                      'h-min rounded-md border-0 bg-background px-3 py-2 text-base'
                     )}
                   >
                     {field.value ? (

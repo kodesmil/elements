@@ -41,10 +41,14 @@ export const KsSelectField = (props: {
             <FormControl>
               <div className="flex flex-row items-center gap-2">
                 <Select value={field.value} onValueChange={field.onChange}>
-                  <SelectTrigger className="w-[180px]">
+                  <SelectTrigger className="h-min border-0 bg-background px-3 py-2 text-base">
                     <SelectValue placeholder={placeholder} />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent
+                    className={
+                      'h-min border-0 bg-background px-3 py-2 text-base'
+                    }
+                  >
                     {selections.map((v) => (
                       <SelectItem key={v.value} value={v.value}>
                         {v.name}

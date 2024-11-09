@@ -46,6 +46,9 @@ export const KsMultiChoiceField = (props: {
                     >
                       <FormControl>
                         <Checkbox
+                          className={
+                            'h-min border-0 bg-background px-3 py-2 text-base'
+                          }
                           checked={field.value?.includes(item.value)}
                           onCheckedChange={(checked) => {
                             return checked
