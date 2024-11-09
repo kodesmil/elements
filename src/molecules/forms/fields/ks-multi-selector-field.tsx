@@ -71,7 +71,7 @@ export const KsMultiSelectorField = (props: {
                       return field.value?.includes(item.value)
                     })
                     .map((item) => (
-                      <Badge key={item.value}>
+                      <Badge variant={'secondary'} key={item.value}>
                         <div className={'flex flex-row items-center gap-2'}>
                           <div>{item.name}</div>
                           <Button
