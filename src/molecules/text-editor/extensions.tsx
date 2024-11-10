@@ -19,6 +19,7 @@ export const defaultExtensions: (Node | Extension | Mark)[] = [
   Color.configure({ types: [TextStyle.name, ListItem.name] }),
   TextStyle.configure(),
   StarterKit.configure({
+    document: false,
     bulletList: {
       keepMarks: true,
       keepAttributes: false,

@@ -1,4 +1,4 @@
-import { defaultExtensions } from '@covision/elements/molecules'
+import { defaultExtensions } from '@covision/elements/molecules/text-editor/extensions'
 import { MenuBar } from '@covision/elements/molecules/text-editor/menu-bar'
 import { suggestions } from '@covision/elements/molecules/text-editor/suggestions'
 import {

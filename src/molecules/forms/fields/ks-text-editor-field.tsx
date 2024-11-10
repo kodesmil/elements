@@ -6,8 +6,8 @@ import {
   FormLabel,
   FormMessage,
 } from '@covision/elements/atoms'
-import { KsTextEditor } from '@covision/elements/molecules'
 import { useFormContext } from 'react-hook-form'
+import { KsTextEditor } from '../../text-editor/text-editor'
 
 export function KsTextEditorField(props: {
   formField: string
