@@ -13,9 +13,11 @@ export const KsTextAreaField = (props: {
   formField: string
   formLabel?: string
   formDescription?: string
+  placeholder?: string
   className?: string
 }) => {
-  const { formDescription, formLabel, formField, className } = props
+  const { formDescription, formLabel, formField, className, placeholder } =
+    props
   const form = useFormContext()
   return (
     <div className={className}>
@@ -27,6 +29,7 @@ export const KsTextAreaField = (props: {
             {formLabel && <FormLabel>{formLabel}</FormLabel>}
             <FormControl>
               <Textarea
+                placeholder={placeholder}
                 className={'h-min border-0 bg-background px-4 py-3 text-base'}
                 rows={5}
                 {...field}

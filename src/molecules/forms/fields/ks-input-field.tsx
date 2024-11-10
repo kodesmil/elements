@@ -15,6 +15,7 @@ export const KsInputField = (props: {
   formInputType?: HTMLInputTypeAttribute
   formLabel?: string
   formDescription?: string
+  placeholder?: string
   className?: string
   action?: ReactNode
 }) => {
@@ -22,6 +23,7 @@ export const KsInputField = (props: {
     formField,
     formDescription,
     formLabel,
+    placeholder,
     action,
     formInputType,
     className,
@@ -38,6 +40,7 @@ export const KsInputField = (props: {
             <FormControl>
               <div className="flex flex-row items-center gap-2">
                 <Input
+                  placeholder={placeholder}
                   className={'h-min border-0 bg-background px-3 py-2 text-base'}
                   {...field}
                   type={formInputType ?? 'text'}

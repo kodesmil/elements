@@ -7,6 +7,7 @@ export const KsNameField = (props: {
   formField: string
   formLabel?: string
   formDescription?: string
+  placeholder?: string
   generateButtonName?: string
   className?: string
 }) => {
