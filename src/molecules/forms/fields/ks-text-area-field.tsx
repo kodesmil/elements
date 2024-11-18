@@ -36,13 +36,15 @@ export const KsTextAreaField = (props: {
           <FormItem>
             {formLabel && <FormLabel>{formLabel}</FormLabel>}
             <FormControl>
-              <Textarea
-                placeholder={placeholder}
-                className={'h-min border-0 bg-background px-4 py-3 text-base'}
-                rows={5}
-                {...field}
-              />
-              {action}
+              <div className="flex flex-row items-start gap-2">
+                <Textarea
+                  placeholder={placeholder}
+                  className={'h-min border-0 bg-background px-4 py-3 text-base'}
+                  rows={5}
+                  {...field}
+                />
+                {action}
+              </div>
             </FormControl>
             {formDescription && (
               <FormDescription>{formDescription}</FormDescription>
