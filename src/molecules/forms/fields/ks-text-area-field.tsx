@@ -7,6 +7,7 @@ import {
   FormMessage,
   Textarea,
 } from '@covision/elements/atoms'
+import type { ReactNode } from 'react'
 import { useFormContext } from 'react-hook-form'
 
 export const KsTextAreaField = (props: {
@@ -15,9 +16,16 @@ export const KsTextAreaField = (props: {
   formDescription?: string
   placeholder?: string
   className?: string
+  action?: ReactNode
 }) => {
-  const { formDescription, formLabel, formField, className, placeholder } =
-    props
+  const {
+    formDescription,
+    formLabel,
+    formField,
+    className,
+    placeholder,
+    action,
+  } = props
   const form = useFormContext()
   return (
     <div className={className}>
@@ -34,6 +42,7 @@ export const KsTextAreaField = (props: {
                 rows={5}
                 {...field}
               />
+              {action}
             </FormControl>
             {formDescription && (
               <FormDescription>{formDescription}</FormDescription>
