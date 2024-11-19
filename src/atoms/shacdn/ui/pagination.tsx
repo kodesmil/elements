@@ -1,15 +1,14 @@
 import {
+  type ButtonProps,
+  buttonVariants,
+} from '@covision/elements/atoms/shacdn/ui/button'
+import { cn } from '@covision/elements/lib/utils'
+import {
   ChevronLeftIcon,
   ChevronRightIcon,
   DotsHorizontalIcon,
 } from '@radix-ui/react-icons'
 import * as React from 'react'
-
-import {
-  type ButtonProps,
-  buttonVariants,
-} from '@covision/elements/atoms/shacdn/ui/button'
-import { cn } from '@covision/elements/lib/utils'
 
 const Pagination = ({ className, ...props }: React.ComponentProps<'nav'>) => (
   <nav

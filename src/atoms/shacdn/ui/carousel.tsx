@@ -1,13 +1,12 @@
 'use client'
 
+import { Button } from '@covision/elements/atoms/shacdn/ui/button'
+import { cn } from '@covision/elements/lib/utils'
 import { ArrowLeftIcon, ArrowRightIcon } from '@radix-ui/react-icons'
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from 'embla-carousel-react'
 import * as React from 'react'
-
-import { Button } from '@covision/elements/atoms/shacdn/ui/button'
-import { cn } from '@covision/elements/lib/utils'
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>

@@ -1,10 +1,5 @@
 'use client'
 
-import { Slot } from '@radix-ui/react-slot'
-import { type VariantProps, cva } from 'class-variance-authority'
-import { PanelLeft } from 'lucide-react'
-import * as React from 'react'
-
 import { useIsMobile } from '@covision/elements/atoms/shacdn/hooks/use-mobile'
 import { Button } from '@covision/elements/atoms/shacdn/ui/button'
 import { Input } from '@covision/elements/atoms/shacdn/ui/input'
@@ -18,6 +13,10 @@ import {
   TooltipTrigger,
 } from '@covision/elements/atoms/shacdn/ui/tooltip'
 import { cn } from '@covision/elements/lib/utils'
+import { ViewVerticalIcon } from '@radix-ui/react-icons'
+import { Slot } from '@radix-ui/react-slot'
+import { type VariantProps, cva } from 'class-variance-authority'
+import * as React from 'react'
 
 const SIDEBAR_COOKIE_NAME = 'sidebar:state'
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7
@@ -278,7 +277,7 @@ const SidebarTrigger = React.forwardRef<
       }}
       {...props}
     >
-      <PanelLeft />
+      <ViewVerticalIcon />
       <span className="sr-only">Toggle Sidebar</span>
     </Button>
   )

@@ -135,11 +135,11 @@ const ChartTooltipContent = React.forwardRef<
     const { config } = useChart()
 
     const tooltipLabel = React.useMemo(() => {
-      if (hideLabel || payload?.length === 0) {
+      if (hideLabel || !payload || payload?.length === 0) {
         return null
       }
 
-      const [item] = payload || []
+      const [item] = payload
       const key = `${labelKey || item.dataKey || item.name || 'value'}`
       const itemConfig = getPayloadConfigFromPayload(config, item, key)
       const value =
@@ -150,7 +150,7 @@ const ChartTooltipContent = React.forwardRef<
       if (labelFormatter) {
         return (
           <div className={cn('font-medium', labelClassName)}>
-            {labelFormatter(value, payload ?? [])}
+            {labelFormatter(value, payload)}
           </div>
         )
       }
@@ -186,7 +186,7 @@ const ChartTooltipContent = React.forwardRef<
       >
         {nestLabel ? null : tooltipLabel}
         <div className="grid gap-1.5">
-          {payload?.map((item, index) => {
+          {payload.map((item, index) => {
             const key = `${nameKey || item.name || item.dataKey || 'value'}`
             const itemConfig = getPayloadConfigFromPayload(config, item, key)
             const indicatorColor = color || item.payload.fill || item.color
