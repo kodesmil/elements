@@ -30,15 +30,16 @@ export const KsSwitchField = (props: {
                 <FormDescription>{formDescription}</FormDescription>
               )}
             </div>
-            <FormControl>
-              <Switch
-                className="h-min border-0 bg-background px-3 py-2 text-base"
-                checked={field.value}
-                onCheckedChange={field.onChange}
-                aria-readonly={true}
-              />
-            </FormControl>
-            <FormMessage />
+            <div>
+              <FormControl>
+                <Switch
+                  className="h-min border-0 bg-background px-3 py-2 text-base"
+                  checked={field.value}
+                  onCheckedChange={field.onChange}
+                />
+              </FormControl>
+              <FormMessage />
+            </div>
           </FormItem>
         )}
       />
