@@ -1,4 +1,4 @@
-import { Button, type ButtonProps } from '@covision/elements/atoms'
+import { Button, type LoadingButtonProps } from '@covision/elements/atoms'
 import { KsTooltip } from '@covision/elements/molecules'
 import { ListBulletIcon } from '@radix-ui/react-icons'
 import type { Editor } from '@tiptap/core'
@@ -28,7 +28,7 @@ import {
 } from 'lucide-react'
 
 const MenuButton = (
-  props: { isActive: boolean; tooltip: string } & ButtonProps
+  props: { isActive: boolean; tooltip: string } & LoadingButtonProps
 ) => (
   <KsTooltip tooltip={props.tooltip}>
     <Button
